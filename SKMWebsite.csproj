@@ -202,8 +202,8 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\AboutUs.cshtml" />
+    <Content Include="Views\Home\ContactUs.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\page-builder.js" />
     <Content Include="Scripts\revolution.extension.kenburn.min.js" />
@@ -211,6 +211,10 @@
     <Content Include="Scripts\revolution.extension.slideanims.min.js" />
     <Content Include="Scripts\script-core.js" />
     <Content Include="Scripts\script.js" />
+    <Content Include="Views\Home\OurServices.cshtml" />
+    <Content Include="Views\Home\Reviews.cshtml" />
+    <Content Include="Views\Home\Calculator.cshtml" />
+    <Content Include="Views\Home\Downloads.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

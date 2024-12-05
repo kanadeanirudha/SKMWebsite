@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace SKMWebsite.Controllers
 {
@@ -13,17 +9,29 @@ namespace SKMWebsite.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult AboutUs()
         {
-            ViewBag.Message = "Your application description page.";
-
+            return View();
+        }
+        public ActionResult OurServices()
+        {
+            return View();
+        }
+        public ActionResult Calculator()
+        {
+            return View();
+        }
+        public ActionResult Downloads()
+        {
+            return View();
+        }
+        public ActionResult Reviews()
+        {
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult ContactUs()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }
