@@ -1,345 +1,66 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>@ViewBag.Title - SKM</title>
-    <link rel="stylesheet" href="~/Content/settings.css" type="text/css" media="all">
-    <link rel="stylesheet" href="~/Content/style-core.css" type="text/css" media="all">
-    <link rel="stylesheet" href="~/Content/financity-style-custom.css" type="text/css" media="all">
-    <link rel="stylesheet" href="~/Content/style.css" type="text/css" media="all">
-    <link rel="stylesheet" href="~/Content/page-builder.css" type="text/css" media="all">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%7CAsap%3Aregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic&amp;subset=latin-ext%2Clatin%2Cvietnamese%2Ccyrillic-ext%2Cgreek%2Cgreek-ext%2Ccyrillic&amp;ver=4.9.5" type="text/css" media="all">
-    <style></style>
-    <style></style>
-    <style>
-        #rev_slider_1_1 .uranus.tparrows {
-        width: 50px;
-        height: 50px;
-        background: rgba(255,255,255,0);
-        }
 
-        #rev_slider_1_1 .uranus.tparrows:before {
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        font-size: 40px;
-        transition: all 0.3s;
-        -webkit-transition: all 0.3s;
-        }
+    <link rel='stylesheet' href='../plugins/revslider/public/assets/css/settings.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='../css/style-core.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='../css/financity-style-custom.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='../plugins/goodlayers-core/plugins/combine/style.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='../plugins/goodlayers-core/include/css/page-builder.css' type='text/css' media='all'>
 
-        #rev_slider_1_1 .uranus.tparrows:hover:before {
-        opacity: 0.75;
-        }
-
-        #rev_slider_1_1 .uranus .tp-bullet {
-        border-radius: 50%;
-        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
-        -webkit-transition: box-shadow 0.3s ease;
-        transition: box-shadow 0.3s ease;
-        background: transparent;
-        width: 15px;
-        height: 15px;
-        }
-
-        #rev_slider_1_1 .uranus .tp-bullet.selected,
-        #rev_slider_1_1 .uranus .tp-bullet:hover {
-        box-shadow: 0 0 0 2px rgba(255, 255, 255,1);
-        border: none;
-        border-radius: 50%;
-        background: transparent;
-        }
-
-        #rev_slider_1_1 .uranus .tp-bullet-inner {
-        -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        outline: none;
-        border-radius: 50%;
-        background-color: rgb(255, 255, 255);
-        background-color: rgba(255, 255, 255, 0.3);
-        text-indent: -999em;
-        cursor: pointer;
-        position: absolute;
-        }
-
-        #rev_slider_1_1 .uranus .tp-bullet.selected .tp-bullet-inner,
-        #rev_slider_1_1 .uranus .tp-bullet:hover .tp-bullet-inner {
-        transform: scale(0.4);
-        -webkit-transform: scale(0.4);
-        background-color: rgb(255, 255, 255);
-        }
-    </style>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%7CAsap%3Aregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic&#038;subset=latin-ext%2Clatin%2Cvietnamese%2Ccyrillic-ext%2Cgreek%2Cgreek-ext%2Ccyrillic&#038;ver=4.9.5' type='text/css' media='all'>
 </head>
 <body class="home page-template-default page page-id-5514 gdlr-core-body financity-body financity-body-front financity-full  financity-with-sticky-navigation gdlr-core-link-to-lightbox">
-    <div class="financity-mm-menu-wrap financity-navigation-font mm-menu mm-pagedim-black mm-offcanvas mm-right" id="financity-mobile-menu" data-slide="right">
-        <div class="mm-panels">
-            <div class="mm-panel mm-hasnavbar mm-opened mm-current" id="menu-main-navigation">
-                <div class="mm-navbar"><a class="mm-title"><span class="mmenu-custom-close"></span></a></div><ul class="m-menu mm-listview">
-                    <li class="menu-item menu-item-home current-menu-item page_item page-item-2039 current_page_item">
-                        <a href="../home/index">Home</a>
-                    </li>
-                    <li class="menu-item menu-item-has-children">
-                        <a class="mm-next mm-fullsubopen" href="https://max-themes.net/demos/financity/demo2/index.html#mm-1" data-target="#mm-1"></a>
-                        <span class="financity-mm-menu-blank">Pages</span>
-                    </li>
-                    <li class="menu-item menu-item-has-children">
-                        <a class="mm-next" href="https://max-themes.net/demos/financity/demo2/index.html#mm-4" data-target="#mm-4"></a>
-                        <a href="https://max-themes.net/demos/financity/demo2/services.html">Our Services</a>
-                    </li>
-                    <li class="menu-item menu-item-has-children">
-                        <a class="mm-next" href="https://max-themes.net/demos/financity/demo2/index.html#mm-5" data-target="#mm-5"></a>
-                        <a href="https://max-themes.net/demos/financity/demo2/portfolio-3-columns.html">Our Cases</a>
-                    </li>
-                    <li class="menu-item menu-item-has-children">
-                        <a class="mm-next mm-fullsubopen" href="https://max-themes.net/demos/financity/demo2/index.html#mm-10" data-target="#mm-10"></a>
-                        <span class="financity-mm-menu-blank">Features</span>
-                    </li>
-                    <li class="menu-item menu-item-has-children">
-                        <a class="mm-next" href="https://max-themes.net/demos/financity/demo2/index.html#mm-15" data-target="#mm-15"></a>
-                        <a href="https://max-themes.net/demos/financity/demo2/blog-full-right-sidebar-with-frame.html">Blog</a>
-                    </li>
-                    <li class="menu-item menu-item-has-children">
-                        <a class="mm-next" href="https://max-themes.net/demos/financity/demo2/index.html#mm-19" data-target="#mm-19"></a>
-                        <a href="https://max-themes.net/demos/financity/demo2/shop.html">Shop</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="mm-panel mm-hasnavbar mm-hidden" id="mm-1">
-                <div class="mm-navbar">
-                    <a class="mm-btn mm-prev" href="https://max-themes.net/demos/financity/demo2/index.html#menu-main-navigation" data-target="#menu-main-navigation"></a>
-                    <a class="mm-title" href="https://max-themes.net/demos/financity/demo2/index.html#menu-main-navigation">Pages</a>
-                </div>
-                <ul class="sub-menu mm-listview">
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/about-us.html">About Us</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/about-us-2.html">About Us 2</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/about-us-3.html">About Us 3</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/about-our-team.html">About Our Team</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/career.html">Career</a></li>
-                    <li class="menu-item menu-item-has-children">
-                        <a class="mm-next mm-fullsubopen" href="https://max-themes.net/demos/financity/demo2/index.html#mm-2" data-target="#mm-2"></a><span class="financity-mm-menu-blank">Contact</span>
-
-                    </li>
-                    <li class="menu-item menu-item-has-children">
-                        <a class="mm-next mm-fullsubopen" href="https://max-themes.net/demos/financity/demo2/index.html#mm-3" data-target="#mm-3"></a><span class="financity-mm-menu-blank">Team</span>
-
-                    </li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/gallery.html">Gallery</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/price-table.html">Price Table</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/maintenance.html">Maintenance</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/coming-soon.html">Coming Soon</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/404.html">404 Page</a></li>
-                </ul>
-            </div><div class="mm-panel mm-hasnavbar mm-hidden" id="mm-2">
-                <div class="mm-navbar"><a class="mm-btn mm-prev" href="https://max-themes.net/demos/financity/demo2/index.html#mm-1" data-target="#mm-1"></a><a class="mm-title" href="https://max-themes.net/demos/financity/demo2/index.html#mm-1">Contact</a></div><ul class="sub-menu mm-listview">
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/contact.html">Contact</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/contact-2.html">Contact 2</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/contact-3.html">Contact 3</a></li>
-                </ul>
-            </div><div class="mm-panel mm-hasnavbar mm-hidden" id="mm-3">
-                <div class="mm-navbar"><a class="mm-btn mm-prev" href="https://max-themes.net/demos/financity/demo2/index.html#mm-1" data-target="#mm-1"></a><a class="mm-title" href="https://max-themes.net/demos/financity/demo2/index.html#mm-1">Team</a></div><ul class="sub-menu mm-listview">
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/team-plain-style.html">Team / Plain Style</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/team-thumbnail-style.html">Team / Thumbnail Style</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/team-frame-style.html">Team / Frame Style</a></li>
-                </ul>
-            </div><div class="mm-panel mm-hasnavbar mm-hidden" id="mm-4">
-                <div class="mm-navbar"><a class="mm-btn mm-prev" href="https://max-themes.net/demos/financity/demo2/index.html#menu-main-navigation" data-target="#menu-main-navigation"></a><a class="mm-title" href="https://max-themes.net/demos/financity/demo2/index.html#menu-main-navigation">Our Services</a></div><ul class="sub-menu mm-listview">
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/capital-markets.html">Capital Markets</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/insurance.html">Insurance</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blockchain.html">Blockchain</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/technology-advisory.html">Technology Advisory</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/finance-risk.html">Finance &amp; Risk</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-management.html">Portfolio Management</a></li>
-                </ul>
-            </div>
-            <div class="mm-panel mm-hasnavbar mm-hidden" id="mm-5">
-                <div class="mm-navbar"><a class="mm-btn mm-prev" href="https://max-themes.net/demos/financity/demo2/index.html#menu-main-navigation" data-target="#menu-main-navigation"></a><a class="mm-title" href="https://max-themes.net/demos/financity/demo2/index.html#menu-main-navigation">Our Cases</a></div><ul class="sub-menu mm-listview">
-                    <li class="menu-item menu-item-has-children">
-                        <a class="mm-next" href="https://max-themes.net/demos/financity/demo2/index.html#mm-6" data-target="#mm-6"></a><a>Portfolio Grid</a>
-
-                    </li>
-                    <li class="menu-item menu-item-has-children">
-                        <a class="mm-next" href="https://max-themes.net/demos/financity/demo2/index.html#mm-7" data-target="#mm-7"></a><a>Portfolio Modern</a>
-
-                    </li>
-                    <li class="menu-item menu-item-has-children">
-                        <a class="mm-next" href="https://max-themes.net/demos/financity/demo2/index.html#mm-8" data-target="#mm-8"></a><a>Portfolio Side Thumbnail</a>
-
-                    </li>
-                    <li class="menu-item menu-item-has-children">
-                        <a class="mm-next mm-fullsubopen" href="https://max-themes.net/demos/financity/demo2/index.html#mm-9" data-target="#mm-9"></a><span class="financity-mm-menu-blank">Single Case(Portfolio)</span>
-
-                    </li>
-                </ul>
-            </div>
-            <div class="mm-panel mm-hasnavbar mm-hidden" id="mm-6">
-                <div class="mm-navbar"><a class="mm-btn mm-prev" href="https://max-themes.net/demos/financity/demo2/index.html#mm-5" data-target="#mm-5"></a><a class="mm-title" href="https://max-themes.net/demos/financity/demo2/index.html#mm-5">Portfolio Grid</a></div><ul class="sub-menu mm-listview">
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-2-columns.html">Portfolio 2 Columns</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-3-columns.html">Portfolio 3 Columns</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-4-columns.html">Portfolio 4 Columns</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-2-columns-with-frame.html">Portfolio 2 Columns With Frame</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-3-columns-with-frame.html">Portfolio 3 Columns With Frame</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-4-columns-with-frame.html">Portfolio 4 Columns With Frame</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-2-columns-no-space.html">Portfolio 2 Columns No Space</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-3-columns-no-space.html">Portfolio 3 Columns No Space</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-4-columns-no-space.html">Portfolio 4 Columns No Space</a></li>
-                </ul>
-            </div><div class="mm-panel mm-hasnavbar mm-hidden" id="mm-7">
-                <div class="mm-navbar"><a class="mm-btn mm-prev" href="https://max-themes.net/demos/financity/demo2/index.html#mm-5" data-target="#mm-5"></a><a class="mm-title" href="https://max-themes.net/demos/financity/demo2/index.html#mm-5">Portfolio Modern</a></div><ul class="sub-menu mm-listview">
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-modern-2-columns.html">Modern 2 Columns</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-modern-3-columns.html">Modern 3 Columns</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-modern-4-columns.html">Modern 4 Columns</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-modern-2-columns-no-space.html">Modern 2 Columns No Space</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-modern-3-columns-no-space.html">Modern 3 Columns No Space</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-modern-4-columns-no-space.html">Modern 4 Columns No Space</a></li>
-                </ul>
-            </div><div class="mm-panel mm-hasnavbar mm-hidden" id="mm-8">
-                <div class="mm-navbar"><a class="mm-btn mm-prev" href="https://max-themes.net/demos/financity/demo2/index.html#mm-5" data-target="#mm-5"></a><a class="mm-title" href="https://max-themes.net/demos/financity/demo2/index.html#mm-5">Portfolio Side Thumbnail</a></div><ul class="sub-menu mm-listview">
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-left-right-large-thumbnail.html">Portfolio Left &amp; Right Large Thumbnail</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-left-large-thumbnail.html">Portfolio Left Large Thumbnail</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-right-large-thumbnail.html">Portfolio Right Large Thumbnail</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-left-right-small-thumbnail.html">Portfolio Left &amp; Right Small Thumbnail</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-left-small-thumbnail.html">Portfolio Left Small Thumbnail</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/portfolio-right-small-thumbnail.html">Portfolio Right Small Thumbnail</a></li>
-                </ul>
-            </div><div class="mm-panel mm-hasnavbar mm-hidden" id="mm-9">
-                <div class="mm-navbar"><a class="mm-btn mm-prev" href="https://max-themes.net/demos/financity/demo2/index.html#mm-5" data-target="#mm-5"></a><a class="mm-title" href="https://max-themes.net/demos/financity/demo2/index.html#mm-5">Single Case(Portfolio)</a></div><ul class="sub-menu mm-listview">
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/startup-funding.html">Custom Style 1</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/family-asset-management.html">Custom Style 2</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/accounting-advisory.html">Custom Style 3</a></li>
-                </ul>
-            </div><div class="mm-panel mm-hasnavbar mm-hidden" id="mm-10">
-                <div class="mm-navbar"><a class="mm-btn mm-prev" href="https://max-themes.net/demos/financity/demo2/index.html#menu-main-navigation" data-target="#menu-main-navigation"></a><a class="mm-title" href="https://max-themes.net/demos/financity/demo2/index.html#menu-main-navigation">Features</a></div><ul class="sub-menu mm-listview">
-                    <li class="menu-item menu-item-has-children">
-                        <a class="mm-next mm-fullsubopen" href="https://max-themes.net/demos/financity/demo2/index.html#mm-11" data-target="#mm-11"></a><span class="financity-mm-menu-blank">Mega 1</span>
-
-                    </li>
-                    <li class="menu-item menu-item-has-children">
-                        <a class="mm-next mm-fullsubopen" href="https://max-themes.net/demos/financity/demo2/index.html#mm-12" data-target="#mm-12"></a><span class="financity-mm-menu-blank">Mega 2</span>
-
-                    </li>
-                    <li class="menu-item menu-item-has-children">
-                        <a class="mm-next mm-fullsubopen" href="https://max-themes.net/demos/financity/demo2/index.html#mm-13" data-target="#mm-13"></a><span class="financity-mm-menu-blank">Mega 3</span>
-
-                    </li>
-                    <li class="menu-item menu-item-has-children">
-                        <a class="mm-next mm-fullsubopen" href="https://max-themes.net/demos/financity/demo2/index.html#mm-14" data-target="#mm-14"></a><span class="financity-mm-menu-blank">Mega 4</span>
-
-                    </li>
-                </ul>
-            </div><div class="mm-panel mm-hasnavbar mm-hidden" id="mm-11">
-                <div class="mm-navbar"><a class="mm-btn mm-prev" href="https://max-themes.net/demos/financity/demo2/index.html#mm-10" data-target="#mm-10"></a><a class="mm-title" href="https://max-themes.net/demos/financity/demo2/index.html#mm-10">Mega 1</a></div><ul class="sub-menu mm-listview">
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/accordions-toggles.html">Accordions &amp; Toggles</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/alert-box.html">Alert Box</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blockquotes.html">Blockquotes</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/buttons.html">Buttons</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/call-to-action.html">Call To Action</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/column-services.html">Column Services</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/columns.html">Columns</a></li>
-                </ul>
-            </div><div class="mm-panel mm-hasnavbar mm-hidden" id="mm-12">
-                <div class="mm-navbar"><a class="mm-btn mm-prev" href="https://max-themes.net/demos/financity/demo2/index.html#mm-10" data-target="#mm-10"></a><a class="mm-title" href="https://max-themes.net/demos/financity/demo2/index.html#mm-10">Mega 2</a></div><ul class="sub-menu mm-listview">
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/counters.html">Counters</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/count-down.html">Count Down</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/dividers.html">Dividers</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/dropcaps.html">Dropcaps</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/featured-boxes.html">Featured Boxes</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/flip-boxes.html">Flip Boxes</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/icon-list.html">Icon Lists</a></li>
-                </ul>
-            </div><div class="mm-panel mm-hasnavbar mm-hidden" id="mm-13">
-                <div class="mm-navbar"><a class="mm-btn mm-prev" href="https://max-themes.net/demos/financity/demo2/index.html#mm-10" data-target="#mm-10"></a><a class="mm-title" href="https://max-themes.net/demos/financity/demo2/index.html#mm-10">Mega 3</a></div><ul class="sub-menu mm-listview">
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/icons.html">Icons</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/images.html">Images</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/team-plain-style.html">Personnel</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/price-table.html">Price Table</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/promo-boxes.html">Promo Boxes</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/skill-bar.html">Skill Bar</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/skill-circle.html">Skill Circle</a></li>
-                </ul>
-            </div><div class="mm-panel mm-hasnavbar mm-hidden" id="mm-14">
-                <div class="mm-navbar"><a class="mm-btn mm-prev" href="https://max-themes.net/demos/financity/demo2/index.html#mm-10" data-target="#mm-10"></a><a class="mm-title" href="https://max-themes.net/demos/financity/demo2/index.html#mm-10">Mega 4</a></div><ul class="sub-menu mm-listview">
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/social-shares.html">Social Shares</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/stunning-texts.html">Stunning Texts</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/tabs-horizontal.html">Tabs Horizontal</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/tabs-vertical.html">Tabs Vertical</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/testimonial.html">Testimonial</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/titles.html">Titles</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/typography.html">Typography</a></li>
-                </ul>
-            </div><div class="mm-panel mm-hasnavbar mm-hidden" id="mm-15">
-                <div class="mm-navbar"><a class="mm-btn mm-prev" href="https://max-themes.net/demos/financity/demo2/index.html#menu-main-navigation" data-target="#menu-main-navigation"></a><a class="mm-title" href="https://max-themes.net/demos/financity/demo2/index.html#menu-main-navigation">Blog</a></div><ul class="sub-menu mm-listview">
-                    <li class="menu-item menu-item-has-children">
-                        <a class="mm-next" href="https://max-themes.net/demos/financity/demo2/index.html#mm-16" data-target="#mm-16"></a><a href="https://max-themes.net/demos/financity/demo2/blog-grid-3-columns-no-space.html">Blog Grid</a>
-
-                    </li>
-                    <li class="menu-item menu-item-has-children">
-                        <a class="mm-next" href="https://max-themes.net/demos/financity/demo2/index.html#mm-17" data-target="#mm-17"></a><a href="https://max-themes.net/demos/financity/demo2/blog-3-columns-with-frame.html">Blog Columns</a>
-
-                    </li>
-                    <li class="menu-item menu-item-has-children">
-                        <a class="mm-next" href="https://max-themes.net/demos/financity/demo2/index.html#mm-18" data-target="#mm-18"></a><a href="https://max-themes.net/demos/financity/demo2/blog-full-right-sidebar-with-frame.html">Blog Full</a>
-
-                    </li>
-                    <li class="menu-item" data-size="60"><a href="https://max-themes.net/demos/financity/demo2/standard-post-type.html" class="sf-with-ul-pre">Single Post</a></li>
-                </ul>
-            </div><div class="mm-panel mm-hasnavbar mm-hidden" id="mm-16">
-                <div class="mm-navbar"><a class="mm-btn mm-prev" href="https://max-themes.net/demos/financity/demo2/index.html#mm-15" data-target="#mm-15"></a><a class="mm-title" href="https://max-themes.net/demos/financity/demo2/index.html#mm-15">Blog Grid</a></div><ul class="sub-menu mm-listview">
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blog-grid-2-columns.html">Blog Grid 2 Columns</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blog-grid-3-columns.html">Blog Grid 3 Columns</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blog-grid-4-columns.html">Blog Grid 4 Columns</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blog-grid-2-columns-no-space.html">Blog Grid 2 Columns</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blog-grid-3-columns-no-space.html">Blog Grid 3 Columns</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blog-grid-4-columns-no-space.html">Blog Grid 4 Columns</a></li>
-                </ul>
-            </div><div class="mm-panel mm-hasnavbar mm-hidden" id="mm-17">
-                <div class="mm-navbar"><a class="mm-btn mm-prev" href="https://max-themes.net/demos/financity/demo2/index.html#mm-15" data-target="#mm-15"></a><a class="mm-title" href="https://max-themes.net/demos/financity/demo2/index.html#mm-15">Blog Columns</a></div><ul class="sub-menu mm-listview">
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blog-2-columns-with-frame.html">Blog 2 Columns With Frame</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blog-3-columns-with-frame.html">Blog 3 Columns With Frame</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blog-4-columns-with-frame.html">Blog 4 Columns With Frame</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blog-2-columns.html">Blog 2 Columns</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blog-3-columns.html">Blog 3 Columns</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blog-4-columns.html">Blog 4 Columns</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blog-3-columns-with-frame-post-format.html">Blog Columns With Post Format</a></li>
-                </ul>
-            </div><div class="mm-panel mm-hasnavbar mm-hidden" id="mm-18">
-                <div class="mm-navbar"><a class="mm-btn mm-prev" href="https://max-themes.net/demos/financity/demo2/index.html#mm-15" data-target="#mm-15"></a><a class="mm-title" href="https://max-themes.net/demos/financity/demo2/index.html#mm-15">Blog Full</a></div><ul class="sub-menu mm-listview">
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blog-full-right-sidebar-with-frame.html">Blog Full Right Sidebar</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blog-full-left-sidebar-with-frame.html">Blog Full Left Sidebar</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blog-full-both-sidebar-with-frame.html">Blog Full Both Sidebar With Frame</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blog-full-right-sidebar.html">Blog Full Right Sidebar</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blog-full-left-sidebar.html">Blog Full Left Sidebar</a></li>
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/blog-full-both-sidebar.html">Blog Full Both Sidebar</a></li>
-                </ul>
-            </div><div class="mm-panel mm-hasnavbar mm-hidden" id="mm-19">
-                <div class="mm-navbar"><a class="mm-btn mm-prev" href="https://max-themes.net/demos/financity/demo2/index.html#menu-main-navigation" data-target="#menu-main-navigation"></a><a class="mm-title" href="https://max-themes.net/demos/financity/demo2/index.html#menu-main-navigation">Shop</a></div><ul class="sub-menu mm-listview">
-                    <li class="menu-item"><a href="https://max-themes.net/demos/financity/demo2/shop.html">Shop</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
     <div class="financity-mobile-header-wrap">
         <div class="financity-mobile-header financity-header-background financity-style-slide" id="financity-mobile-header">
             <div class="financity-mobile-header-container financity-container">
                 <div class="financity-logo  financity-item-pdlr">
                     <div class="financity-logo-inner">
-                        <a href="../home/index"><img src="~/Images/logo.png" alt="" width="211" height="48"></a>
+                        <a href="index.html"><img src="../upload/logo.png" alt="" width="211" height="48"></a>
                     </div>
                 </div>
                 <div class="financity-mobile-menu-right">
                     <div class="financity-mobile-menu">
-                        <a class="financity-mm-menu-button financity-mobile-menu-button financity-mobile-button-hamburger" href="../home/index#financity-mobile-menu"><span></span></a>
+                        <a class="financity-mm-menu-button financity-mobile-menu-button financity-mobile-button-hamburger" href="#financity-mobile-menu"><span></span></a>
+                        <div class="financity-mm-menu-wrap financity-navigation-font" id="financity-mobile-menu" data-slide="right">
+                            <ul id="menu-main-navigation" class="m-menu">
+                                <li class="menu-item menu-item-home current-menu-item page_item page-item-2039 current_page_item">
+                                    <a href="/home/index">Home</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/home/aboutus">About Us</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="services.html">Our Services</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/home/ourservices">Our Services</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/home/calculator">Calculator</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/home/downloads">Downloads</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/home/reviews">Reviews</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/home/contactus">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="financity-body-outer-wrapper  mm-page mm-slideout" id="mm-0">
+    <div class="financity-body-outer-wrapper ">
         <div class="financity-body-wrapper clearfix  financity-with-transparent-header financity-with-frame">
             <div class="financity-header-background-transparent">
                 <div class="financity-top-bar">
@@ -347,14 +68,6 @@
                     <div class="financity-top-bar-container clearfix financity-container ">
                         <div class="financity-top-bar-left financity-item-pdlr">
                             <span class="gdlr-core-dropdown-tab gdlr-core-js clearfix">
-                                @*<span class="gdlr-core-dropdown-tab-title">
-                                    <span class="gdlr-core-head">Hamburg</span>
-                                    <span class="gdlr-core-dropdown-tab-head-wrap">
-                                        <span class="gdlr-core-dropdown-tab-head gdlr-core-active" data-index="0">Hamburg</span>
-                                        <span class="gdlr-core-dropdown-tab-head " data-index="1">New York</span>
-                                    </span>
-                                </span>
-                                <span class="financity-top-bar-divider financity-right-margin"></span>*@
                                 <span class="gdlr-core-dropdown-tab-content-wrap">
                                     <span class="gdlr-core-dropdown-tab-content gdlr-core-active" data-index="0">
                                         <i class="fa fa-clock-o" style="font-size: 17px;color: #ffffff;margin-right: 10px;"></i>
@@ -372,8 +85,8 @@
                             </span>
                         </div>
                         <div class="financity-top-bar-right financity-item-pdlr">
-                            <div class="financity-top-bar-right-text"><i class="fa fa-envelope-open-o" style="font-size: 17px;color: #ffffff;margin-left: 20px;margin-right: 14px;"></i><strong>Email <a href="mailto:admin@skfinance.co.nz">admin@skfinance.co.nz</a></strong></div><span class="financity-top-bar-divider financity-left-margin"></span>
-                            <div class="financity-top-bar-right-social"><a href="https://max-themes.net/demos/financity/demo2/index.html#" target="_blank" class="financity-top-bar-social-icon" title="facebook"><i class="fa fa-facebook"></i></a><a href="https://max-themes.net/demos/financity/demo2/index.html#" target="_blank" class="financity-top-bar-social-icon" title="google-plus"><i class="fa fa-google-plus"></i></a><a href="https://max-themes.net/demos/financity/demo2/index.html#" target="_blank" class="financity-top-bar-social-icon" title="pinterest"><i class="fa fa-pinterest-p"></i></a><a href="https://max-themes.net/demos/financity/demo2/index.html#" target="_blank" class="financity-top-bar-social-icon" title="twitter"><i class="fa fa-twitter"></i></a><a href="https://max-themes.net/demos/financity/demo2/index.html#" target="_blank" class="financity-top-bar-social-icon" title="instagram"><i class="fa fa-instagram"></i></a></div>
+                            <div class="financity-top-bar-right-text"><i class="fa fa-envelope-open-o" style="font-size: 17px;color: #a5bfff;margin-left: 20px;margin-right: 14px;"></i><strong>Email <a href="mailto:admin@skfinance.co.nz">admin@skfinance.co.nz</a></strong></div><span class="financity-top-bar-divider financity-left-margin"></span>
+                            <div class="financity-top-bar-right-social"><a href="#" target="_blank" class="financity-top-bar-social-icon" title="facebook"><i class="fa fa-facebook"></i></a><a href="#" target="_blank" class="financity-top-bar-social-icon" title="google-plus"><i class="fa fa-google-plus"></i></a><a href="#" target="_blank" class="financity-top-bar-social-icon" title="pinterest"><i class="fa fa-pinterest-p"></i></a><a href="#" target="_blank" class="financity-top-bar-social-icon" title="twitter"><i class="fa fa-twitter"></i></a><a href="#" target="_blank" class="financity-top-bar-social-icon" title="instagram"><i class="fa fa-instagram"></i></a></div>
                         </div>
                     </div>
                 </div>
@@ -387,38 +100,84 @@
                                 </div>
                             </div>
                             <div class="financity-navigation financity-item-pdlr clearfix ">
-                                <div class="financity-main-menu sf-js-enabled sf-arrows" id="financity-main-menu" style="touch-action: pan-y;">
+                                <div class="financity-main-menu" id="financity-main-menu">
                                     <ul id="menu-main-navigation-1" class="sf-menu">
                                         <li class="menu-item menu-item-home current-menu-item page_item page-item-2039 current_page_item financity-normal-menu">
-                                            <a href="../home/index"><i class="fa fa-home"></i>Home</a>
+                                            <a href="/home/index"><i class="fa fa-home"></i>Home</a>
                                         </li>
-                                        <li class="menu-item menu-item-has-children financity-normal-menu">
-                                            <a href="../home/aboutus" class="sf-with-ul-pre sf-with-ul">About Us</a>
+                                        <li class="menu-item financity-normal-menu">
+                                            <a href="/home/aboutus" class="sf-with-ul-pre">About Us</a>
                                         </li>
-                                        <li class="menu-item menu-item-has-children financity-normal-menu">
-                                            <a class="nav-link" href="/home/ourservices"> Our Services</a>
+                                        <li class="menu-item financity-normal-menu">
+                                            <a href="/home/ourservices" class="sf-with-ul-pre">Our Services</a>
                                         </li>
-                                        <li class="menu-item menu-item-has-children financity-normal-menu">
+                                        <li class="menu-item financity-normal-menu">
                                             <a class="nav-link" href="/home/calculator">Calculator</a>
                                         </li>
-                                        <li class="menu-item menu-item-has-children financity-normal-menu">
+                                        <li class="menu-item financity-normal-menu">
                                             <a class="nav-link" href="/home/downloads">Downloads</a>
                                         </li>
-                                        <li class="menu-item menu-item-has-children financity-normal-menu">
+                                        <li class="menu-item financity-normal-menu">
                                             <a class="nav-link" href="/home/reviews">Reviews</a>
                                         </li>
-                                        <li class="menu-item menu-item-has-children financity-normal-menu">
+                                        <li class="menu-item financity-normal-menu">
                                             <a class="nav-link" href="/home/contactus">Contact Us</a>
                                         </li>
                                     </ul>
-                                    <div class="financity-navigation-slide-bar" id="financity-navigation-slide-bar" style="width: 75px; left: 517.413px; display: block; overflow: hidden;"></div>
+                                    <div class="financity-navigation-slide-bar" id="financity-navigation-slide-bar"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </header>
             </div>
-            @RenderBody()
+            <div class="financity-page-wrapper" id="financity-page-wrapper">
+                <div class="gdlr-core-page-builder-body">
+                    @RenderBody()
+                    <div class="gdlr-core-pbf-wrapper " style="margin: 0px 0px 0px 0px;padding: 70px 0px 30px 0px;">
+                        <div class="gdlr-core-pbf-background-wrap" style="background-color: #f2f2f2 ;"></div>
+                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container-custom" style="max-width: 1360px;">
+                                <div class="gdlr-core-pbf-element">
+                                    <div class="gdlr-core-gallery-item gdlr-core-item-pdb clearfix  gdlr-core-gallery-item-style-grid gdlr-core-item-pdlr ">
+                                        <div class="gdlr-core-flexslider flexslider gdlr-core-js-2 " data-type="carousel" data-column="5" data-nav="none" data-nav-parent="gdlr-core-blog-item">
+                                            <ul class="slides">
+                                                <li class="gdlr-core-item-mglr">
+                                                    <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/banner-3.png" alt="" width="148" height="44"></div>
+                                                </li>
+                                                <li class="gdlr-core-item-mglr">
+                                                    <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/banner-4.png" alt="" width="132" height="46"></div>
+                                                </li>
+                                                <li class="gdlr-core-item-mglr">
+                                                    <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/banner-2.png" alt="" width="141" height="45"></div>
+                                                </li>
+                                                <li class="gdlr-core-item-mglr">
+                                                    <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/banner-1.png" alt="" width="138" height="49"></div>
+                                                </li>
+                                                <li class="gdlr-core-item-mglr">
+                                                    <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/banner-5.png" alt="" width="151" height="43"></div>
+                                                </li>
+                                                <li class="gdlr-core-item-mglr">
+                                                    <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/banner-4.png" alt="" width="132" height="46"></div>
+                                                </li>
+                                                <li class="gdlr-core-item-mglr">
+                                                    <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/banner-2.png" alt="" width="141" height="45"></div>
+                                                </li>
+                                                <li class="gdlr-core-item-mglr">
+                                                    <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/banner-1.png" alt="" width="138" height="49"></div>
+                                                </li>
+                                                <li class="gdlr-core-item-mglr">
+                                                    <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/banner-5.png" alt="" width="151" height="43"></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <footer>
                 <div class="financity-footer-wrapper ">
                     <div class="financity-footer-container financity-container clearfix">
@@ -457,35 +216,31 @@
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5509">
                                             <a href="../home/reviews">Reviews</a>
                                         </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5509">
+                                            <a href="~/Attachments/Privacy-Policy.pdf" target="_blank">Privacy Policy</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5509">
+                                            <a href="~/Attachments/skm-disclosure-24.pdf" target="_blank">Disclosure Form</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="financity-footer-column financity-item-pdlr financity-column-15" style="width:50% !important">
+                        <div class="financity-footer-column financity-item-pdlr financity-column-15">
                             <div id="text-4" class="widget widget_text financity-widget">
                                 <h3 class="financity-widget-title">Contact Form</h3>
                                 <div class="textwidget">
                                     <div role="form" class="wpcf7" id="wpcf7-f5505-o2" lang="en-US" dir="ltr">
                                         <div class="screen-reader-response"></div>
-                                        <form action="../home/contactus/#wpcf7-f5505-o2" method="post" class="wpcf7-form" novalidate="novalidate">
+                                        <form action="/home/contactus/#wpcf7-f5505-o2" method="post" class="wpcf7-form" novalidate="novalidate">
                                             <div class="gdlr-core-input-wrap gdlr-core-small gdlr-core-full-width gdlr-core-with-column gdlr-core-no-border">
-                                                <div class="gdlr-core-column-60">
-                                                    <span class="wpcf7-form-control-wrap your-name">
-                                                        <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name*" fdprocessedid="9z5gwv">
-                                                    </span>
-                                                </div>
+                                                <div class="gdlr-core-column-60"><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name*"></span></div>
                                                 <div class="clear"></div>
-                                                <div class="gdlr-core-column-60">
-                                                    <span class="wpcf7-form-control-wrap your-email">
-                                                        <input type="text" name="your-mobile number" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Mobile Number*" fdprocessedid="6dz1m5">
-                                                    </span>
-                                                </div>
-                                                <div class="clear"></div>
-                                                <div class="gdlr-core-column-60"><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*" fdprocessedid="6dz1m5"></span></div>
+                                                <div class="gdlr-core-column-60"><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*"></span></div>
                                                 <div class="clear"></div>
                                                 <div class="gdlr-core-column-60"><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message*"></textarea></span></div>
                                                 <div class="gdlr-core-column-60 gdlr-core-left-align">
-                                                    <input type="submit" value="Submit Now" class="wpcf7-form-control wpcf7-submit gdlr-core-small" fdprocessedid="zpksc9">
+                                                    <input type="submit" value="Submit Now" class="wpcf7-form-control wpcf7-submit gdlr-core-small">
                                                 </div>
                                             </div>
                                             <div class="wpcf7-response-output wpcf7-display-none"></div>
@@ -498,12 +253,12 @@
                 </div>
                 <div class="financity-copyright-wrapper">
                     <div class="financity-copyright-container financity-container clearfix">
-                        <div class="financity-copyright-left financity-item-pdlr">Copyright <script>document.write(/\d{4}/.exec(Date())[0])</script>. Website Design & Developed By <a href="http://coditechsoftware.com/" target="_blank"><strong style="color:#ffffff;">Coditech Innovations Pvt. Ltd</strong></a></div>
+                        <div class="financity-copyright-left financity-item-pdlr">Copyright @System.DateTime.Now.Year. Website Design & Developed By <a href="http://coditechsoftware.com/" target="_blank"><strong style="color:#ffffff;">Coditech Innovations Pvt. Ltd</strong></a></div>
                         <div class="financity-copyright-right financity-item-pdlr">
-                            <a href="#" target="_self"><i class="fa fa-facebook" style="font-size: 16px;color: #ffffff;margin-left: 17px;"></i></a> 
+                            <a href="#" target="_self"><i class="fa fa-facebook" style="font-size: 16px;color: #ffffff;margin-left: 17px;"></i></a>
                             <a href="#" target="_self"><i class="fa fa-twitter" style="font-size: 16px;color: #ffffff;margin-left: 17px;"></i></a>
-                            <a href="#" target="_self"><i class="fa fa-linkedin" style="font-size: 16px;color: #ffffff;margin-left: 17px;"></i></a> 
-                            <a href="#" target="_self"><i class="fa fa-google-plus" style="font-size: 16px;color: #ffffff;margin-left: 17px;"></i></a> 
+                            <a href="#" target="_self"><i class="fa fa-linkedin" style="font-size: 16px;color: #ffffff;margin-left: 17px;"></i></a>
+                            <a href="#" target="_self"><i class="fa fa-google-plus" style="font-size: 16px;color: #ffffff;margin-left: 17px;"></i></a>
                             <a href="#" target="_self"><i class="fa fa-instagram" style="font-size: 16px;color: #ffffff;margin-left: 17px;"></i></a>
                         </div>
                     </div>
@@ -512,51 +267,53 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="~/Scripts/jquery.js"></script>
-    <script type="text/javascript" src="~/Scripts/jquery-migrate.min.js"></script>
-    <script type="text/javascript" src="~/Scripts/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="~/Scripts/jquery.themepunch.revolution.min.js"></script>
+
+    <script type='text/javascript' src='../js/jquery/jquery.js'></script>
+    <script type='text/javascript' src='../js/jquery/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='../plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js'></script>
+    <script type='text/javascript' src='../plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js'></script>
 
 
     <!--[if lt IE 9]> <script type='text/javascript' src='https://demo.goodlayers.com/financity/wp-content/themes/financity/js/html5.js'></script> <![endif]-->
 
-    <script type="text/javascript" src="~/Scripts/effect.min.js"></script>
-    <script type="text/javascript">
+    <script type='text/javascript' src='../js/jquery/ui/effect.min.js'></script>
+    <script type='text/javascript'>
         var financity_script_core = {
-        "home_url": "index.html//"
+            "home_url": "index.html//"
         };
     </script>
-    <script type="text/javascript" src="~/Scripts/script-core.js"></script>
+    <script type='text/javascript' src='../js/script-core.js'></script>
 
-    <script type="text/javascript" src="~/Scripts/script.js"></script>
-    <script type="text/javascript">
+    <script type='text/javascript' src='../plugins/goodlayers-core/plugins/combine/script.js'></script>
+    <script type='text/javascript'>
         var gdlr_core_pbf = {
-        "admin": "",
-        "video": {
-        "width": "640",
-        "height": "360"
-        },
-        "ajax_url": "https:////demo.goodlayers.com//financity//wp-admin//admin-ajax.php",
-        "ilightbox_skin": "dark"
+            "admin": "",
+            "video": {
+                "width": "640",
+                "height": "360"
+            },
+            "ajax_url": "https:////demo.goodlayers.com//financity//wp-admin//admin-ajax.php",
+            "ilightbox_skin": "dark"
         };
     </script>
-    <script type="text/javascript" src="~/Scripts/page-builder.js"></script>
 
-    <script type="text/javascript" src="~/Scripts/revolution.extension.slideanims.min.js"></script>
-    <script type="text/javascript" src="~/Scripts/revolution.extension.layeranimation.min.js"></script>
-    <script type="text/javascript" src="~/Scripts/revolution.extension.kenburn.min.js"></script>
-    <script type="text/javascript" src="~/Scripts/revolution.extension.navigation.min.js"></script>
-    <script type="text/javascript" src="~/Scripts/revolution.extension.parallax.min.js"></script>
+    @*-------Slider----------*@
+    <script type='text/javascript' src='../plugins/goodlayers-core/include/js/page-builder.js'></script>
+    <script type="text/javascript" src="../plugins/revslider/public/assets/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="../plugins/revslider/public/assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="../plugins/revslider/public/assets/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="../plugins/revslider/public/assets/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="../plugins/revslider/public/assets/js/extensions/revolution.extension.parallax.min.js"></script>
     <script>
         /*<![CDATA[*/
         var htmlDiv = document.getElementById("rs-plugin-settings-inline-css");
         var htmlDivCss = "";
         if (htmlDiv) {
-        htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+            htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
         } else {
-        var htmlDiv = document.createElement("div");
-        htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
-        document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+            var htmlDiv = document.createElement("div");
+            htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+            document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
         } /*]]>*/
     </script>
     <script>
@@ -564,133 +321,133 @@
         var htmlDiv = document.getElementById("rs-plugin-settings-inline-css");
         var htmlDivCss = "";
         if (htmlDiv) {
-        htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+            htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
         } else {
-        var htmlDiv = document.createElement("div");
-        htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
-        document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+            var htmlDiv = document.createElement("div");
+            htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+            document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
         } /*]]>*/
     </script>
     <script type="text/javascript">
         /*<![CDATA[*/
         var setREVStartSize = function () {
-        try {
-        var e = new Object,
-        i = jQuery(window).width(),
-        t = 9999,
-        r = 0,
-        n = 0,
-        l = 0,
-        f = 0,
-        s = 0,
-        h = 0;
-        e.c = jQuery('#rev_slider_1_1');
-        e.gridwidth = [1300];
-        e.gridheight = [790];
-        e.sliderLayout = "auto";
-        if (e.responsiveLevels && (jQuery.each(e.responsiveLevels, function (e, f) {
-        f > i && (t = r = f, l = e), i > f && f > r && (r = f, n = e)
-        }), t > r && (l = n)), f = e.gridheight[l] || e.gridheight[0] || e.gridheight, s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth, h = i / s, h = h > 1 ? 1 : h, f = Math.round(h * f), "fullscreen" == e.sliderLayout) {
-        var u = (e.c.width(), jQuery(window).height());
-        if (void 0 != e.fullScreenOffsetContainer) {
-        var c = e.fullScreenOffsetContainer.split(",");
-        if (c) jQuery.each(c, function (e, i) {
-        u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u
-        }), e.fullScreenOffset.split("%").length > 1 && void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 ? u -= jQuery(window).height() * parseInt(e.fullScreenOffset, 0) / 100 : void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 && (u -= parseInt(e.fullScreenOffset, 0))
-        }
-        f = u
-        } else void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight);
-        e.c.closest(".rev_slider_wrapper").css({
-        height: f
-        })
-        } catch (d) {
-        console.log("Failure at Presize of Slider:" + d)
-        }
+            try {
+                var e = new Object,
+                    i = jQuery(window).width(),
+                    t = 9999,
+                    r = 0,
+                    n = 0,
+                    l = 0,
+                    f = 0,
+                    s = 0,
+                    h = 0;
+                e.c = jQuery('#rev_slider_1_1');
+                e.gridwidth = [1300];
+                e.gridheight = [790];
+                e.sliderLayout = "auto";
+                if (e.responsiveLevels && (jQuery.each(e.responsiveLevels, function (e, f) {
+                    f > i && (t = r = f, l = e), i > f && f > r && (r = f, n = e)
+                }), t > r && (l = n)), f = e.gridheight[l] || e.gridheight[0] || e.gridheight, s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth, h = i / s, h = h > 1 ? 1 : h, f = Math.round(h * f), "fullscreen" == e.sliderLayout) {
+                    var u = (e.c.width(), jQuery(window).height());
+                    if (void 0 != e.fullScreenOffsetContainer) {
+                        var c = e.fullScreenOffsetContainer.split(",");
+                        if (c) jQuery.each(c, function (e, i) {
+                            u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u
+                        }), e.fullScreenOffset.split("%").length > 1 && void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 ? u -= jQuery(window).height() * parseInt(e.fullScreenOffset, 0) / 100 : void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 && (u -= parseInt(e.fullScreenOffset, 0))
+                    }
+                    f = u
+                } else void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight);
+                e.c.closest(".rev_slider_wrapper").css({
+                    height: f
+                })
+            } catch (d) {
+                console.log("Failure at Presize of Slider:" + d)
+            }
         };
         setREVStartSize();
         var tpj = jQuery;
         var revapi1;
         tpj(document).ready(function () {
-        if (tpj("#rev_slider_1_1").revolution == undefined) {
-        revslider_showDoubleJqueryError("#rev_slider_1_1");
-        } else {
-        revapi1 = tpj("#rev_slider_1_1").show().revolution({
-        sliderType: "standard",
-        jsFileLocation: "//demo.goodlayers.com/financity/demo2/wp-content/plugins/revslider/public/assets/js/",
-        sliderLayout: "auto",
-        dottedOverlay: "none",
-        delay: 9000,
-        navigation: {
-        keyboardNavigation: "off",
-        keyboard_direction: "horizontal",
-        mouseScrollNavigation: "off",
-        mouseScrollReverse: "default",
-        onHoverStop: "off",
-        arrows: {
-        style: "uranus",
-        enable: true,
-        hide_onmobile: false,
-        hide_onleave: true,
-        hide_delay: 200,
-        hide_delay_mobile: 1200,
-        tmp: '',
-        left: {
-        h_align: "left",
-        v_align: "center",
-        h_offset: 20,
-        v_offset: 0
-        },
-        right: {
-        h_align: "right",
-        v_align: "center",
-        h_offset: 20,
-        v_offset: 0
-        }
-        },
-        bullets: {
-        enable: true,
-        hide_onmobile: false,
-        style: "uranus",
-        hide_onleave: false,
-        direction: "horizontal",
-        h_align: "center",
-        v_align: "bottom",
-        h_offset: 0,
-        v_offset: 30,
-        space: 10,
-        tmp: '<span class="tp-bullet-inner"></span>'
-        }
-        },
-        visibilityLevels: [1240, 1024, 778, 480],
-        gridwidth: 1300,
-        gridheight: 790,
-        lazyType: "none",
-        parallax: {
-        type: "mouse",
-        origo: "enterpoint",
-        speed: 400,
-        levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 51, 55],
-        },
-        shadow: 0,
-        spinner: "off",
-        stopLoop: "off",
-        stopAfterLoops: -1,
-        stopAtSlide: -1,
-        shuffle: "off",
-        autoHeight: "off",
-        disableProgressBar: "on",
-        hideThumbsOnMobile: "off",
-        hideSliderAtLimit: 0,
-        hideCaptionAtLimit: 0,
-        hideAllCaptionAtLilmit: 0,
-        debugMode: false,
-        fallbacks: {
-        simplifyAll: "off",
-        nextSlideOnWindowFocus: "off",
-        disableFocusListener: false,
-        }
-        });
-        }
+            if (tpj("#rev_slider_1_1").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_1_1");
+            } else {
+                revapi1 = tpj("#rev_slider_1_1").show().revolution({
+                    sliderType: "standard",
+                    jsFileLocation: "//demo.goodlayers.com/financity/demo2/wp-content/plugins/revslider/public/assets/js/",
+                    sliderLayout: "auto",
+                    dottedOverlay: "none",
+                    delay: 9000,
+                    navigation: {
+                        keyboardNavigation: "off",
+                        keyboard_direction: "horizontal",
+                        mouseScrollNavigation: "off",
+                        mouseScrollReverse: "default",
+                        onHoverStop: "off",
+                        arrows: {
+                            style: "uranus",
+                            enable: true,
+                            hide_onmobile: false,
+                            hide_onleave: true,
+                            hide_delay: 200,
+                            hide_delay_mobile: 1200,
+                            tmp: '',
+                            left: {
+                                h_align: "left",
+                                v_align: "center",
+                                h_offset: 20,
+                                v_offset: 0
+                            },
+                            right: {
+                                h_align: "right",
+                                v_align: "center",
+                                h_offset: 20,
+                                v_offset: 0
+                            }
+                        },
+                        bullets: {
+                            enable: true,
+                            hide_onmobile: false,
+                            style: "uranus",
+                            hide_onleave: false,
+                            direction: "horizontal",
+                            h_align: "center",
+                            v_align: "bottom",
+                            h_offset: 0,
+                            v_offset: 30,
+                            space: 10,
+                            tmp: '<span class="tp-bullet-inner"></span>'
+                        }
+                    },
+                    visibilityLevels: [1240, 1024, 778, 480],
+                    gridwidth: 1300,
+                    gridheight: 790,
+                    lazyType: "none",
+                    parallax: {
+                        type: "mouse",
+                        origo: "enterpoint",
+                        speed: 400,
+                        levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 51, 55],
+                    },
+                    shadow: 0,
+                    spinner: "off",
+                    stopLoop: "off",
+                    stopAfterLoops: -1,
+                    stopAtSlide: -1,
+                    shuffle: "off",
+                    autoHeight: "off",
+                    disableProgressBar: "on",
+                    hideThumbsOnMobile: "off",
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    debugMode: false,
+                    fallbacks: {
+                        simplifyAll: "off",
+                        nextSlideOnWindowFocus: "off",
+                        disableFocusListener: false,
+                    }
+                });
+            }
         }); /*]]>*/
     </script>
     <script>
@@ -698,16 +455,103 @@
         var htmlDivCss = unescape("%23rev_slider_1_1%20.uranus.tparrows%20%7B%0A%20%20width%3A50px%3B%0A%20%20height%3A50px%3B%0A%20%20background%3Argba%28255%2C255%2C255%2C0%29%3B%0A%20%7D%0A%20%23rev_slider_1_1%20.uranus.tparrows%3Abefore%20%7B%0A%20width%3A50px%3B%0A%20height%3A50px%3B%0A%20line-height%3A50px%3B%0A%20font-size%3A40px%3B%0A%20transition%3Aall%200.3s%3B%0A-webkit-transition%3Aall%200.3s%3B%0A%20%7D%0A%20%0A%20%20%23rev_slider_1_1%20.uranus.tparrows%3Ahover%3Abefore%20%7B%0A%20%20%20%20opacity%3A0.75%3B%0A%20%20%7D%0A%23rev_slider_1_1%20.uranus%20.tp-bullet%7B%0A%20%20border-radius%3A%2050%25%3B%0A%20%20box-shadow%3A%200%200%200%202px%20rgba%28255%2C%20255%2C%20255%2C%200%29%3B%0A%20%20-webkit-transition%3A%20box-shadow%200.3s%20ease%3B%0A%20%20transition%3A%20box-shadow%200.3s%20ease%3B%0A%20%20background%3Atransparent%3B%0A%20%20width%3A15px%3B%0A%20%20height%3A15px%3B%0A%7D%0A%23rev_slider_1_1%20.uranus%20.tp-bullet.selected%2C%0A%23rev_slider_1_1%20.uranus%20.tp-bullet%3Ahover%20%7B%0A%20%20box-shadow%3A%200%200%200%202px%20rgba%28255%2C%20255%2C%20255%2C1%29%3B%0A%20%20border%3Anone%3B%0A%20%20border-radius%3A%2050%25%3B%0A%20%20background%3Atransparent%3B%0A%7D%0A%0A%23rev_slider_1_1%20.uranus%20.tp-bullet-inner%20%7B%0A%20%20-webkit-transition%3A%20background-color%200.3s%20ease%2C%20-webkit-transform%200.3s%20ease%3B%0A%20%20transition%3A%20background-color%200.3s%20ease%2C%20transform%200.3s%20ease%3B%0A%20%20top%3A%200%3B%0A%20%20left%3A%200%3B%0A%20%20width%3A%20100%25%3B%0A%20%20height%3A%20100%25%3B%0A%20%20outline%3A%20none%3B%0A%20%20border-radius%3A%2050%25%3B%0A%20%20background-color%3A%20rgb%28255%2C%20255%2C%20255%29%3B%0A%20%20background-color%3A%20rgba%28255%2C%20255%2C%20255%2C%200.3%29%3B%0A%20%20text-indent%3A%20-999em%3B%0A%20%20cursor%3A%20pointer%3B%0A%20%20position%3A%20absolute%3B%0A%7D%0A%0A%23rev_slider_1_1%20.uranus%20.tp-bullet.selected%20.tp-bullet-inner%2C%0A%23rev_slider_1_1%20.uranus%20.tp-bullet%3Ahover%20.tp-bullet-inner%7B%0A%20transform%3A%20scale%280.4%29%3B%0A%20-webkit-transform%3A%20scale%280.4%29%3B%0A%20background-color%3Argb%28255%2C%20255%2C%20255%29%3B%0A%7D%0A");
         var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
         if (htmlDiv) {
-        htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+            htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
         } else {
-        var htmlDiv = document.createElement('div');
-        htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
-        document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+            var htmlDiv = document.createElement('div');
+            htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+            document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
         } /*]]>*/
     </script>
+    @*-------End Slider----------*@
 
+    @*-------Google Map----------*@
 
-    <div id="mm-blocker" class="mm-slideout"></div>
+    <script type='text/javascript' src='https://maps.google.com/maps/api/js?libraries=geometry%2Cplaces%2Cweather%2Cpanoramio%2Cdrawing&#038;language=en&#038;ver=4.9.5'></script>
+    <script type='text/javascript'>
+        var wpgmp_local = {
+            "all_location": "All",
+            "show_locations": "Show Locations",
+            "sort_by": "Sort by",
+            "wpgmp_not_working": "not working...",
+            "place_icon_url": "https:////demo.goodlayers.com//financity//wp-content//plugins//wp-google-map-plugin//assets//images//icons//"
+        };
+    </script>
+    <script type='text/javascript' src='~/plugins/google-map-plugin/assets/js/maps.js'></script>
+
+    <script type='text/javascript' src='~/plugins/google-map-plugin/assets/js/frontend.js'></script>
+    <script type='text/javascript' src='~/plugins/goodlayers-core/include/js/page-builder.js'></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            var map1 = $("#map1").maps({
+                "map_options": {
+                    "center_lat": "-36.9047914",
+                    "center_lng": "174.6827758",
+                    "zoom": 14,
+                    "map_type_id": "ROADMAP",
+                    "draggable": true,
+                    "scroll_wheel": false,
+                    "display_45_imagery": "",
+                    "marker_default_icon": "../images//default_marker.png",
+                    "infowindow_setting": "",
+                    "infowindow_bounce_animation": "",
+                    "infowindow_drop_animation": false,
+                    "close_infowindow_on_map_click": false,
+                    "default_infowindow_open": false,
+                    "infowindow_open_event": "click",
+                    "full_screen_control": true,
+                    "search_control": true,
+                    "zoom_control": true,
+                    "map_type_control": true,
+                    "street_view_control": true,
+                    "full_screen_control_position": "TOP_RIGHT",
+                    "search_control_position": null,
+                    "zoom_control_position": "TOP_LEFT",
+                    "map_type_control_position": "TOP_RIGHT",
+                    "map_type_control_style": "HORIZONTAL_BAR",
+                    "street_view_control_position": "TOP_LEFT",
+                    "map_control": true,
+                    "map_control_settings": null,
+                    "width": "",
+                    "height": "400"
+                },
+                "places": [{
+                    "id": "1",
+                    "title": "Auckland",
+                    "address": "London, New Zealand",
+                    "source": "manual",
+                    "content": "Auckland",
+                    "location": {
+                        "icon": "../images//default_marker.png",
+                        "lat": "-36.9047914",
+                        "lng": "174.6827758",
+                        "city": "Auckland",
+                        "state": "Auckland",
+                        "country": "New Zealand",
+                        "onclick_action": "marker",
+                        "redirect_custom_link": "",
+                        "marker_image": null,
+                        "open_new_tab": "yes",
+                        "postal_code": "",
+                        "draggable": false,
+                        "infowindow_default_open": false,
+                        "animation": "BOUNCE",
+                        "infowindow_disable": true,
+                        "zoom": 5,
+                        "extra_fields": null
+                    },
+                    "categories": [],
+                    "custom_filters": null
+                }],
+                "street_view": null,
+                "map_property": {
+                    "map_id": "1"
+                }
+            }).data("wpgmp_maps");
+        });
+    </script>
+    <script type="text/javascript" src="~/quform/js/plugins.js"></script>
+    <script type="text/javascript" src="~/quform/js/scripts.js"></script>
+    @*-------Google Map----------*@
     @RenderSection("scripts", required: false)
 </body>
 </html>
