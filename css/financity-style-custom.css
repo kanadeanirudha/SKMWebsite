@@ -667,7 +667,7 @@ body.financity-boxed .financity-body-wrapper {
 }
 
 .financity-navigation {
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 .financity-navigation-top {
@@ -975,7 +975,7 @@ body.single-post .financity-sidebar-style-none, body.blog .financity-sidebar-sty
 }
 
 .financity-body .financity-header-right-button {
-    background-color: #254099;
+    background-color: #ee0444;
 }
 
 .financity-navigation-background {
@@ -999,7 +999,7 @@ body.single-post .financity-sidebar-style-none, body.blog .financity-sidebar-sty
 }
 
 .financity-main-menu-cart > .financity-top-cart-count {
-    background-color: #254099;
+    background-color: #ee0444;
 }
 
 .financity-main-menu-cart > .financity-top-cart-count {
@@ -1044,11 +1044,11 @@ body.single-post .financity-sidebar-style-none, body.blog .financity-sidebar-sty
 }
 
 .financity-body .financity-breadcrumbs, .financity-body .financity-breadcrumbs a span {
-    color: #254099;
+    color: #ee0444;
 }
 
 .financity-body .gdlr-core-breadcrumbs-item, .financity-body .gdlr-core-breadcrumbs-item a span {
-    color: #254099;
+    color: #ee0444;
 }
 
 .financity-body .financity-breadcrumbs span, .financity-body .financity-breadcrumbs a:hover span {
@@ -1076,7 +1076,7 @@ body.single-post .financity-sidebar-style-none, body.blog .financity-sidebar-sty
     }
 
         .sf-menu > li > .sub-menu a:hover, .sf-menu > li > .sub-menu .current-menu-item > a, .sf-menu > li > .sub-menu .current-menu-ancestor > a, .sf-menu > .financity-mega-menu > .sf-mega a:hover, .sf-menu > .financity-mega-menu > .sf-mega .current-menu-item > a, .sf-vertical > li > .sub-menu a:hover, .sf-vertical > li > .sub-menu .current-menu-item > a, .sf-vertical > li > .sub-menu .current-menu-ancestor > a {
-            color: #254099;
+            color: #ee0444;
         }
 
         .sf-menu > li > .sub-menu a:hover, .sf-menu > li > .sub-menu .current-menu-item > a, .sf-menu > li > .sub-menu .current-menu-ancestor > a, .sf-menu > .financity-mega-menu > .sf-mega a:hover, .sf-menu > .financity-mega-menu > .sf-mega .current-menu-item > a, .sf-vertical > li > .sub-menu a:hover, .sf-vertical > li > .sub-menu .current-menu-item > a, .sf-vertical > li > .sub-menu .current-menu-ancestor > a {
@@ -1197,11 +1197,11 @@ body.financity-boxed .financity-body-wrapper, .gdlr-core-page-builder .gdlr-core
 }
 
 .financity-body a {
-    color: #254099;
+    color: #ee0444;
 }
 
     .financity-body a:hover {
-        color: #4a64ba;
+        color: #ee0444;
     }
 
 .financity-body * {
@@ -1296,19 +1296,19 @@ body.financity-boxed .financity-body-wrapper, .gdlr-core-page-builder .gdlr-core
 }
 
 .financity-sidebar-area a {
-    color: #254099;
+    color: #ee0444;
 }
 
 .widget_recent_entries ul li.current-menu-item > a:before, .widget_recent_comments ul li.current-menu-item > a:before, .widget_pages ul li.current-menu-item > a:before, .widget_rss ul li.current-menu-item > a:before, .widget_archive ul li.current-menu-item > a:before, .widget_categories ul li.current-menu-item > a:before, .widget_nav_menu ul li.current-menu-item > a:before, .widget_meta ul li.current-menu-item > a:before {
-    color: #254099;
+    color: #ee0444;
 }
 
 .widget_recent_entries ul li > a:hover:before, .widget_recent_comments ul li > a:hover:before, .widget_pages ul li > a:hover:before, .widget_rss ul li > a:hover:before, .widget_archive ul li > a:hover:before, .widget_categories ul li > a:hover:before, .widget_nav_menu ul li > a:hover:before, .widget_meta ul li > a:hover:before {
-    color: #254099;
+    color: #ee0444;
 }
 
 .financity-sidebar-area a:hover, .financity-sidebar-area .current-menu-item > a {
-    color: #4a64ba;
+    color: #ee0444;
 }
 
 .gdlr-core-recent-post-widget .gdlr-core-blog-info i {
@@ -1380,19 +1380,19 @@ ul.gdlr-core-twitter-widget-wrap li .gdlr-core-twitter-widget-date a, ul.gdlr-co
 }
 
     .financity-footer-wrapper a {
-        color: #8699d8;
+        color: #ee0444;
     }
 
     .financity-footer-wrapper .widget_recent_entries ul li.current-menu-item > a:before, .financity-footer-wrapper .widget_recent_comments ul li.current-menu-item > a:before, .financity-footer-wrapper .widget_pages ul li.current-menu-item > a:before, .financity-footer-wrapper .widget_rss ul li.current-menu-item > a:before, .financity-footer-wrapper .widget_archive ul li.current-menu-item > a:before, .financity-footer-wrapper .widget_categories ul li.current-menu-item > a:before, .financity-footer-wrapper .widget_nav_menu ul li.current-menu-item > a:before, .financity-footer-wrapper .widget_meta ul li.current-menu-item > a:before {
-        color: #8699d8;
+        color: #ee0444;
     }
 
     .financity-footer-wrapper .widget_recent_entries ul li > a:hover:before, .financity-footer-wrapper .widget_recent_comments ul li > a:hover:before, .financity-footer-wrapper .widget_pages ul li > a:hover:before, .financity-footer-wrapper .widget_rss ul li > a:hover:before, .financity-footer-wrapper .widget_archive ul li > a:hover:before, .financity-footer-wrapper .widget_categories ul li > a:hover:before, .financity-footer-wrapper .widget_nav_menu ul li > a:hover:before, .financity-footer-wrapper .widget_meta ul li > a:hover:before {
-        color: #8699d8;
+        color: #ee0444;
     }
 
     .financity-footer-wrapper a:hover, .financity-footer-wrapper .current-menu-item > a {
-        color: #a9b9e5;
+        color: #ee0444;
     }
 
     .financity-footer-wrapper, .financity-footer-wrapper * {
@@ -1468,7 +1468,7 @@ ul.gdlr-core-twitter-widget-wrap li .gdlr-core-twitter-widget-date a, ul.gdlr-co
 }
 
 .financity-blog-title-wrap .financity-blog-title-overlay {
-    background-color: #254099;
+    background-color: #ee0444;
 }
 
 .financity-single-author .financity-single-author-title a, .financity-single-author .financity-single-author-title a:hover {
@@ -1540,11 +1540,11 @@ ul.gdlr-core-twitter-widget-wrap li .gdlr-core-twitter-widget-date a, ul.gdlr-co
 }
 
 .financity-blog-aside-format .financity-single-article-content, .gdlr-core-blog-aside-format .gdlr-core-blog-content {
-    background-color: #254099;
+    background-color: #ee0444;
 }
 
 .financity-blog-quote-format .financity-single-article-content, .gdlr-core-blog-quote-format .gdlr-core-blog-content {
-    background-color: #254099;
+    background-color: #ee0444;
 }
 
 .financity-blog-aside-format .financity-single-article-content, .gdlr-core-blog-aside-format .gdlr-core-blog-content {
@@ -1564,7 +1564,7 @@ ul.gdlr-core-twitter-widget-wrap li .gdlr-core-twitter-widget-date a, ul.gdlr-co
 }
 
     .gdlr-core-pagination a:hover, .gdlr-core-pagination a.gdlr-core-active, .gdlr-core-pagination span {
-        background-color: #254099;
+        background-color: #ee0444;
     }
 
     .gdlr-core-pagination a:hover, .gdlr-core-pagination a.gdlr-core-active, .gdlr-core-pagination span {
@@ -1614,7 +1614,7 @@ ul.gdlr-core-twitter-widget-wrap li .gdlr-core-twitter-widget-date a, ul.gdlr-co
 }
 
 .gdlr-core-portfolio-badge {
-    background-color: #254099;
+    background-color: #ee0444;
 }
 
 .gdlr-core-portfolio-thumbnail .gdlr-core-portfolio-icon, .gdlr-core-portfolio-thumbnail .gdlr-core-portfolio-title a, .gdlr-core-portfolio-thumbnail .gdlr-core-portfolio-title a:hover {
@@ -1646,7 +1646,7 @@ ul.gdlr-core-twitter-widget-wrap li .gdlr-core-twitter-widget-date a, ul.gdlr-co
     }
 
     .gdlr-core-filterer-wrap.gdlr-core-style-button a:hover, .gdlr-core-filterer-wrap.gdlr-core-style-button a.gdlr-core-active {
-        background-color: #254099;
+        background-color: #ee0444;
     }
 
 .gdlr-core-price-table-item .gdlr-core-price-table {
@@ -1758,19 +1758,19 @@ ul.gdlr-core-twitter-widget-wrap li .gdlr-core-twitter-widget-date a, ul.gdlr-co
 }
 
 .gdlr-core-accordion-style-box-icon .gdlr-core-accordion-item-icon, .gdlr-core-toggle-box-style-box-icon .gdlr-core-toggle-box-item-icon {
-    background-color: #254099;
+    background-color: #ee0444;
 }
 
 .gdlr-core-accordion-style-box-icon .gdlr-core-accordion-item-icon, .gdlr-core-toggle-box-style-box-icon .gdlr-core-toggle-box-item-icon {
-    border-color: #254099;
+    border-color: #ee0444;
 }
 
 .gdlr-core-accordion-style-box-icon .gdlr-core-accordion-item-tab.gdlr-core-active .gdlr-core-accordion-item-icon, .gdlr-core-toggle-box-style-box-icon .gdlr-core-toggle-box-item-tab.gdlr-core-active .gdlr-core-toggle-box-item-icon {
-    color: #254099;
+    color: #ee0444;
 }
 
 .gdlr-core-accordion-style-background-title-icon .gdlr-core-accordion-item-title:before, .gdlr-core-toggle-box-style-background-title-icon .gdlr-core-accordion-item-title:before {
-    color: #254099;
+    color: #ee0444;
 }
 
 .gdlr-core-accordion-style-background-title .gdlr-core-accordion-item-title .gdlr-core-head, .gdlr-core-accordion-style-background-title-icon .gdlr-core-accordion-item-title .gdlr-core-head, .gdlr-core-toggle-box-style-background-title .gdlr-core-toggle-box-item-title .gdlr-core-head, .gdlr-core-toggle-box-style-background-title-icon .gdlr-core-toggle-box-item-title .gdlr-core-head {
@@ -1782,15 +1782,15 @@ ul.gdlr-core-twitter-widget-wrap li .gdlr-core-twitter-widget-date a, ul.gdlr-co
 }
 
 .gdlr-core-accordion-style-background-title .gdlr-core-accordion-item-title, .gdlr-core-accordion-style-background-title-icon .gdlr-core-accordion-item-title, .gdlr-core-toggle-box-style-background-title .gdlr-core-toggle-box-item-title, .gdlr-core-toggle-box-style-background-title-icon .gdlr-core-toggle-box-item-title {
-    background-color: #254099;
+    background-color: #ee0444;
 }
 
 .gdlr-core-accordion-style-background-title-icon .gdlr-core-active .gdlr-core-accordion-item-title:before, .gdlr-core-toggle-box-style-background-title-icon .gdlr-core-active .gdlr-core-accordion-item-title:before {
-    color: #254099;
+    color: #ee0444;
 }
 
 .gdlr-core-accordion-style-background-title .gdlr-core-active .gdlr-core-accordion-item-title, .gdlr-core-accordion-style-background-title-icon .gdlr-core-active .gdlr-core-accordion-item-title, .gdlr-core-toggle-box-style-background-title .gdlr-core-active .gdlr-core-toggle-box-item-title, .gdlr-core-toggle-box-style-background-title-icon .gdlr-core-active .gdlr-core-toggle-box-item-title {
-    color: #254099;
+    color: #ee0444;
 }
 
 .gdlr-core-accordion-style-background-title .gdlr-core-active .gdlr-core-accordion-item-title, .gdlr-core-accordion-style-background-title-icon .gdlr-core-active .gdlr-core-accordion-item-title, .gdlr-core-toggle-box-style-background-title .gdlr-core-active .gdlr-core-toggle-box-item-title, .gdlr-core-toggle-box-style-background-title-icon .gdlr-core-active .gdlr-core-toggle-box-item-title {
@@ -1810,7 +1810,7 @@ ul.gdlr-core-twitter-widget-wrap li .gdlr-core-twitter-widget-date a, ul.gdlr-co
     }
 
     .gdlr-core-audio .mejs-controls .mejs-time-rail .mejs-time-current {
-        background-color: #254099;
+        background-color: #ee0444;
     }
 
     .gdlr-core-audio .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
@@ -1858,11 +1858,11 @@ blockquote, q {
 }
 
 .gdlr-core-blockquote-item .gdlr-core-blockquote-item-author {
-    color: #254099;
+    color: #ee0444;
 }
 
 .gdlr-core-blockquote-item .gdlr-core-blockquote-item-author-position {
-    color: #254099;
+    color: #ee0444;
 }
 
 .gdlr-core-body .gdlr-core-load-more, .gdlr-core-body .gdlr-core-button, .financity-body .financity-button, .financity-body input[type="button"], .financity-body input[type="submit"] {
@@ -1874,7 +1874,7 @@ blockquote, q {
     }
 
 .gdlr-core-body .gdlr-core-load-more, .gdlr-core-body .gdlr-core-button, .financity-body .financity-button, .financity-body input[type="button"], .financity-body input[type="submit"] {
-    background-color: #254099;
+    background-color: #ee0444;
 }
 
     .gdlr-core-body .gdlr-core-load-more:hover, .gdlr-core-body .gdlr-core-button:hover {
@@ -1898,11 +1898,11 @@ blockquote, q {
     }
 
 .gdlr-core-body .gdlr-core-button.gdlr-core-button-gradient {
-    background-color: #254099;
-    background: -webkit-linear-gradient(#445faa, #254099);
-    background: -o-linear-gradient(#445faa, #254099);
-    background: -moz-linear-gradient(#445faa, #254099);
-    background: linear-gradient(#445faa, #254099);
+    background-color: #ee0444;
+    background: -webkit-linear-gradient(#445faa, #ee0444);
+    background: -o-linear-gradient(#445faa, #ee0444);
+    background: -moz-linear-gradient(#445faa, #ee0444);
+    background: linear-gradient(#445faa, #ee0444);
 }
 
 .gdlr-core-call-to-action-item-title {
@@ -1950,7 +1950,7 @@ blockquote, q {
 }
 
 .gdlr-core-flipbox-item .gdlr-core-flipbox-front, .gdlr-core-flipbox-item .gdlr-core-flipbox-back, .gdlr-core-feature-box-item .gdlr-core-feature-box {
-    background-color: #254099;
+    background-color: #ee0444;
 }
 
 .gdlr-core-flipbox-item .gdlr-core-flipbox-front, .gdlr-core-flipbox-item .gdlr-core-flipbox-back, .gdlr-core-flipbox-item .gdlr-core-flipbox-frame, .gdlr-core-feature-box-item .gdlr-core-feature-box, .gdlr-core-feature-box-item .gdlr-core-feature-box-frame {
@@ -2043,7 +2043,7 @@ blockquote, q {
 }
 
 .gdlr-core-personnel-style-grid .gdlr-core-personnel-list-title, .gdlr-core-personnel-style-grid .gdlr-core-personnel-list-title a {
-    color: #254099;
+    color: #ee0444;
 }
 
 .gdlr-core-personnel-style-grid .gdlr-core-personnel-list-position {
@@ -2095,7 +2095,7 @@ blockquote, q {
 }
 
 .gdlr-core-skill-bar-item .gdlr-core-skill-bar-filled {
-    background-color: #254099;
+    background-color: #ee0444;
 }
 
 .gdlr-core-flexslider-nav .flex-direction-nav li a, .gdlr-core-flexslider.gdlr-core-nav-style-middle-large .flex-direction-nav li a {
@@ -2116,11 +2116,11 @@ blockquote, q {
 }
 
     .gdlr-core-flexslider .flex-control-nav li a.flex-active {
-        border-color: #254099;
+        border-color: #ee0444;
     }
 
     .gdlr-core-flexslider .flex-control-nav li a.flex-active {
-        background-color: #254099;
+        background-color: #ee0444;
     }
 
 .gdlr-core-social-share-item a {
@@ -2156,7 +2156,7 @@ blockquote, q {
 }
 
 .gdlr-core-tab-item-title-line {
-    border-color: #254099;
+    border-color: #ee0444;
 }
 
 .gdlr-core-tab-item-title.gdlr-core-active {
@@ -2168,7 +2168,7 @@ blockquote, q {
 }
 
 table tr th {
-    background-color: #254099;
+    background-color: #ee0444;
 }
 
 table tr th, .financity-body table tr th a, .financity-body table tr th a:hover {
@@ -2224,15 +2224,15 @@ table tr:nth-child(even) {
 }
 
 .woocommerce .star-rating span, .single-product.woocommerce #review_form #respond p.stars a, .single-product.woocommerce div.product .product_meta, .single-product.woocommerce div.product .product_meta a {
-    color: #254099;
+    color: #ee0444;
 }
 
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, html .woocommerce input.button, html .woocommerce span.onsale {
-    background-color: #254099;
+    background-color: #ee0444;
 }
 
 span.woocommerce-Price-amount.amount {
-    color: #254099;
+    color: #ee0444;
 }
 
 .woocommerce .price del, .gdlr-core-product-price del, del span.woocommerce-Price-amount.amount {
@@ -2457,7 +2457,7 @@ body .gdlr-core-breadcrumbs-item {
     }
 
 .gdlr-core-page-builder-body [data-skin="Purple Service"] h1, .gdlr-core-page-builder-body [data-skin="Purple Service"] h2, .gdlr-core-page-builder-body [data-skin="Purple Service"] h3, .gdlr-core-page-builder-body [data-skin="Purple Service"] h4, .gdlr-core-page-builder-body [data-skin="Purple Service"] h5, .gdlr-core-page-builder-body [data-skin="Purple Service"] h6, .gdlr-core-page-builder-body [data-skin="Purple Service"] .gdlr-core-skin-title, .gdlr-core-page-builder-body [data-skin="Purple Service"] .gdlr-core-skin-title a {
-    color: #254099
+    color: #ee0444
 }
 
 .gdlr-core-page-builder-body [data-skin="Purple Service"] .gdlr-core-skin-caption, .gdlr-core-page-builder-body [data-skin="Purple Service"] .gdlr-core-skin-caption a, .gdlr-core-page-builder-body [data-skin="Purple Service"] .gdlr-core-skin-caption a:hover {
@@ -2469,7 +2469,7 @@ body .gdlr-core-breadcrumbs-item {
 }
 
     .gdlr-core-page-builder-body [data-skin="Purple Service"] a, .gdlr-core-page-builder-body [data-skin="Purple Service"] .gdlr-core-skin-link {
-        color: #254099
+        color: #ee0444
     }
 
         .gdlr-core-page-builder-body [data-skin="Purple Service"] a:hover, .gdlr-core-page-builder-body [data-skin="Purple Service"] .gdlr-core-skin-link:hover {
@@ -2488,27 +2488,27 @@ body .gdlr-core-breadcrumbs-item {
     }
 
     .gdlr-core-page-builder-body [data-skin="Purple Service"] .gdlr-core-skin-e-background {
-        background-color: #254099
+        background-color: #ee0444
     }
 
     .gdlr-core-page-builder-body [data-skin="Purple Service"] .gdlr-core-flexslider-nav.gdlr-core-round-style li a, .gdlr-core-page-builder-body [data-skin="Purple Service"] .gdlr-core-flexslider-nav.gdlr-core-rectangle-style li a {
-        background-color: #254099;
+        background-color: #ee0444;
     }
 
     .gdlr-core-page-builder-body [data-skin="Purple Service"] .gdlr-core-flexslider .flex-control-nav li a {
-        border-color: #254099;
+        border-color: #ee0444;
     }
 
         .gdlr-core-page-builder-body [data-skin="Purple Service"] .gdlr-core-flexslider .flex-control-nav li a.flex-active {
-            background-color: #254099;
+            background-color: #ee0444;
         }
 
     .gdlr-core-page-builder-body [data-skin="Purple Service"] input:not([type="button"]):not([type="submit"]):not([type="reset"]), .gdlr-core-page-builder-body [data-skin="Purple Service"] textarea {
-        background-color: #254099;
+        background-color: #ee0444;
     }
 
 .gdlr-core-page-builder-body [data-skin="Purple Personnel"] h1, .gdlr-core-page-builder-body [data-skin="Purple Personnel"] h2, .gdlr-core-page-builder-body [data-skin="Purple Personnel"] h3, .gdlr-core-page-builder-body [data-skin="Purple Personnel"] h4, .gdlr-core-page-builder-body [data-skin="Purple Personnel"] h5, .gdlr-core-page-builder-body [data-skin="Purple Personnel"] h6, .gdlr-core-page-builder-body [data-skin="Purple Personnel"] .gdlr-core-skin-title, .gdlr-core-page-builder-body [data-skin="Purple Personnel"] .gdlr-core-skin-title a {
-    color: #254099
+    color: #ee0444
 }
 
 .gdlr-core-page-builder-body [data-skin="Purple Personnel"] .gdlr-core-skin-e-background {
@@ -2572,7 +2572,7 @@ body .gdlr-core-breadcrumbs-item {
 }
 
 .gdlr-core-page-builder-body [data-skin="Column Service HP 1"] h1, .gdlr-core-page-builder-body [data-skin="Column Service HP 1"] h2, .gdlr-core-page-builder-body [data-skin="Column Service HP 1"] h3, .gdlr-core-page-builder-body [data-skin="Column Service HP 1"] h4, .gdlr-core-page-builder-body [data-skin="Column Service HP 1"] h5, .gdlr-core-page-builder-body [data-skin="Column Service HP 1"] h6, .gdlr-core-page-builder-body [data-skin="Column Service HP 1"] .gdlr-core-skin-title, .gdlr-core-page-builder-body [data-skin="Column Service HP 1"] .gdlr-core-skin-title a {
-    color: #254099
+    color: #ee0444
 }
 
     .gdlr-core-page-builder-body [data-skin="Column Service HP 1"] .gdlr-core-skin-title a:hover {
@@ -2612,7 +2612,7 @@ body .gdlr-core-breadcrumbs-item {
 }
 
 .gdlr-core-page-builder-body [data-skin="Home Cases"] h1, .gdlr-core-page-builder-body [data-skin="Home Cases"] h2, .gdlr-core-page-builder-body [data-skin="Home Cases"] h3, .gdlr-core-page-builder-body [data-skin="Home Cases"] h4, .gdlr-core-page-builder-body [data-skin="Home Cases"] h5, .gdlr-core-page-builder-body [data-skin="Home Cases"] h6, .gdlr-core-page-builder-body [data-skin="Home Cases"] .gdlr-core-skin-title, .gdlr-core-page-builder-body [data-skin="Home Cases"] .gdlr-core-skin-title a {
-    color: #254099
+    color: #ee0444
 }
 
 .gdlr-core-page-builder-body [data-skin="Home Cases"], .gdlr-core-page-builder-body [data-skin="Home Cases"] .gdlr-core-skin-content {
@@ -2827,7 +2827,7 @@ body .gdlr-core-breadcrumbs-item {
 }
 
     .gdlr-core-page-builder-body [data-skin="Hp2 Blog"] .gdlr-core-skin-title a:hover {
-        color: #254099
+        color: #ee0444
     }
 
 .gdlr-core-page-builder-body [data-skin="Hp3 Service"] h1, .gdlr-core-page-builder-body [data-skin="Hp3 Service"] h2, .gdlr-core-page-builder-body [data-skin="Hp3 Service"] h3, .gdlr-core-page-builder-body [data-skin="Hp3 Service"] h4, .gdlr-core-page-builder-body [data-skin="Hp3 Service"] h5, .gdlr-core-page-builder-body [data-skin="Hp3 Service"] h6, .gdlr-core-page-builder-body [data-skin="Hp3 Service"] .gdlr-core-skin-title, .gdlr-core-page-builder-body [data-skin="Hp3 Service"] .gdlr-core-skin-title a {
