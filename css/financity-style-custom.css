@@ -911,7 +911,7 @@ body.single-post .financity-sidebar-style-none, body.blog .financity-sidebar-sty
 }
 
 .financity-top-bar-background {
-    background-color: #254099;
+    background-color: #ee0444;
 }
 
 .financity-dropdown-wpml-flag .financity-dropdown-wpml-flag-background {
@@ -919,7 +919,7 @@ body.single-post .financity-sidebar-style-none, body.blog .financity-sidebar-sty
 }
 
 .financity-top-bar-divider:before {
-    border-color: #4756ad;
+    border-color: #ffffff;
 }
 
 .financity-body .financity-top-bar {
@@ -955,7 +955,7 @@ body.single-post .financity-sidebar-style-none, body.blog .financity-sidebar-sty
     }
 
 .financity-header-background, .financity-sticky-menu-placeholder, .financity-header-style-boxed.financity-fixed-navigation {
-    background-color: #112349;
+    background-color: #ee0444;
 }
 
 .financity-header-wrap.financity-header-style-plain {
