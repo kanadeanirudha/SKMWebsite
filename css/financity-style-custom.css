@@ -983,11 +983,11 @@ body.single-post .financity-sidebar-style-none, body.blog .financity-sidebar-sty
 }
 
 .financity-navigation .financity-navigation-slide-bar {
-    border-color: #536daf;
+    border-color: #ee0444;
 }
 
     .financity-navigation .financity-navigation-slide-bar:before {
-        border-bottom-color: #536daf;
+        border-bottom-color: #ee0444;
     }
 
 .financity-header-side-nav.financity-style-side-toggle .financity-logo {
