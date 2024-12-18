@@ -10,7 +10,7 @@
         </div>
     </div>
 </div>
-<div class="gdlr-core-pbf-wrapper" style="padding: 90px 0px 40px 0px;">
+<div class="gdlr-core-pbf-wrapper calculator-wrapper" style="padding: 90px 0px 40px 0px;">
     <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
         <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
             <div class="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first">
@@ -27,8 +27,8 @@
                                     <div class="gdlr-core-tab-item-content  gdlr-core-active" data-tab-id="1">
 
                                         <div class="gdlr-core-pbf-element">
-                                            <div class="gdlr-core-price-table-item gdlr-core-item-pdlr gdlr-core-item-pdb clearfix ">
-                                                <div class="gdlr-core-price-table-column gdlr-core-column-20">
+                                            <div class="gdlr-core-price-table-item gdlr-core-item-pdlr gdlr-core-item-pdb clearfix d-flex ">
+                                                <div class="gdlr-core-price-table-column gdlr-core-column-flex">
                                                     <div class="gdlr-core-price-table ">
                                                         <div class="gdlr-core-price-table-head">
                                                             <h3 class="gdlr-core-price-table-title">Home Loan Calculator</h3>
@@ -36,27 +36,43 @@
                                                         <div class="gdlr-core-price-table-content-wrap">
                                                             <div class="gdlr-core-price-table-content">
                                                                 <div class="gdlr-core-price-list-shortcode">
-                                                                    <ul>
-                                                                        <li>
+                                                                    <ul class="calculator-col-first">
+                                                                        <li class="d-flex flex-column  justify-start  input-range">
                                                                             <label>Loan Amount</label>
-                                                                            <input type="text" class="form-control" id="LoanAmount" value="2500000" />
+                                                                            <div class="input-group prefix ">
+                                                                                <span class="input-group-addon">$</span>
+                                                                                <input type="text" class="form-control" id="LoanAmount" value="2500000" />
+                                                                            </div>
+                                                                            <div class="rangeslider-container">
+                                                                                <input class="range" type="range" name="" value="0" min="0" max="1000"/>
+                                                                            </div>
                                                                         </li>
-                                                                        <li>
+                                                                        <li class="d-flex flex-column justify-start input-range">
                                                                             <label>Interest Rate</label>
-                                                                            <input type="text" class="form-control" id="InterestRate" value="10" />
+                                                                            <div class="input-group">
+                                                                                <input type="text" class="form-control" id="InterestRate" value="10" />
+                                                                            </div>
+                                                                            <div class="rangeslider-container">
+                                                                                <input class="range" type="range" name="" value="0" min="0" max="1000" />
+                                                                            </div>
                                                                         </li>
-                                                                        <li>
+                                                                        <li class="d-flex flex-column  justify-start input-range">
                                                                             <label>Loan Tenure</label>
-                                                                            <input type="text" class="form-control" id="LoanTenure" value="15" />
+                                                                            <div class="input-group">
+                                                                                <input type="text" class="form-control" id="LoanTenure" value="15" />
+                                                                            </div>
+                                                                            <div class="rangeslider-container">
+                                                                                <input class="range" type="range" name="" value="0" min="0" max="1000" />
+                                                                            </div>
                                                                         </li>
-                                                                    </ul>
-                                                                </div>
+                                                                </ul>
                                                             </div>
-                                                            <a class="gdlr-core-price-table-button gdlr-core-button" href="#" target="_self">Calculate</a>
+                                                            </div>
+                                                            @*<a class="gdlr-core-price-table-button gdlr-core-button" href="#" target="_self">Calculate</a>*@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="gdlr-core-price-table-column gdlr-core-column-20">
+                                                <div class="gdlr-core-price-table-column gdlr-core-column-flex">
                                                     <div class="gdlr-core-price-table">
                                                         <div class="gdlr-core-price-table-head">
                                                             <h3 class="gdlr-core-price-table-title">Your EMI Details</h3>
@@ -64,17 +80,26 @@
                                                         <div class="gdlr-core-price-table-content-wrap">
                                                             <div class="gdlr-core-price-table-content">
                                                                 <div class="gdlr-core-price-list-shortcode">
-                                                                    <ul>
-                                                                        <li>Loan EMI : 5247</li>
-                                                                        <li>Total Interest Payable : 52470</li>
-                                                                        <li>Total Payment : 152470</li>
+                                                                    <ul class="EMI-details">
+                                                                        <li>
+                                                                            <label class="item-lbl">Loan EMI</label>
+                                                                            <div class="item-value">$5247</div>
+                                                                         </li>
+                                                                        <li>
+                                                                            <label class="item-lbl">Total Interest Payable</label>
+                                                                            <div class="item-value">$52470</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <label class="item-lbl">Total Payment</label>
+                                                                            <div class="item-value">$152470</div>
+                                                                        </li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="gdlr-core-price-table-column gdlr-core-column-20">
+                                                <div class="gdlr-core-price-table-column gdlr-core-column-flex">
                                                     <div class="gdlr-core-price-table">
                                                         <div class="gdlr-core-price-table-head">
                                                             <h3 class="gdlr-core-price-table-title">Principal vs Interest</h3>
