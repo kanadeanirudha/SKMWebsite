@@ -208,6 +208,7 @@
     <Content Include="Images\slider-2-1.jpg" />
     <Content Include="Images\success.png" />
     <Content Include="Images\video-button.png" />
+    <Content Include="Images\Video1.mp4" />
     <Content Include="js\isotopefilter.js" />
     <Content Include="js\jquery\jquery-migrate.min.js" />
     <Content Include="js\jquery\jquery.js" />
