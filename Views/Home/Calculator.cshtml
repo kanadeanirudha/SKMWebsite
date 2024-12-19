@@ -1,5 +1,21 @@
-﻿@{
+﻿@Model
+@{
     ViewBag.Title = "Calculator";
+    string homeActiveClass = "";
+    string personalActiveClass = "";
+    string otherActiveClass = "";
+    if (Model == "home" )
+    {
+        homeActiveClass = "gdlr-core-active";
+    }
+    else if (Model == "personal")
+    {
+        personalActiveClass = "gdlr-core-active";
+    }
+    else if (Model == "other")
+    {
+        otherActiveClass = "gdlr-core-active";
+    }
 }
 <div class="financity-page-title-wrap  financity-style-custom financity-left-align">
     <div class="financity-header-transparent-substitute"></div>
@@ -19,116 +35,48 @@
                         <div class="gdlr-core-pbf-element">
                             <div class="gdlr-core-tab-item gdlr-core-js gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-tab-style1-horizontal gdlr-core-item-pdlr">
                                 <div class="gdlr-core-tab-item-title-wrap clearfix gdlr-core-title-font">
-                                    <div class="gdlr-core-tab-item-title  gdlr-core-active" data-tab-id="1">Home Loan</div>
-                                    <div class="gdlr-core-tab-item-title " data-tab-id="2">Personal Loan</div>
-                                    <div class="gdlr-core-tab-item-title " data-tab-id="3">Car Loan</div>
+                                    <a href="../home/calculator?loanType=home">
+                                        <div class="gdlr-core-tab-item-title @homeActiveClass">Home Loan</div>
+                                    </a>
+                                    <a href="../home/calculator?loanType=personal">
+                                        <div class="gdlr-core-tab-item-title @personalActiveClass ">Personal Loan</div>
+                                    </a>
+                                    <a href="../home/calculator?loanType=other">
+                                        <div class="gdlr-core-tab-item-title @otherActiveClass ">Other Loan</div>
+                                    </a>
                                 </div>
                                 <div class="gdlr-core-tab-item-content-wrap clearfix">
-                                    <div class="gdlr-core-tab-item-content  gdlr-core-active" data-tab-id="1">
-
-                                        <div class="gdlr-core-pbf-element">
-                                            <div class="gdlr-core-price-table-item gdlr-core-item-pdlr gdlr-core-item-pdb clearfix d-flex ">
-                                                <div class="gdlr-core-price-table-column gdlr-core-column-flex">
-                                                    <div class="gdlr-core-price-table ">
-                                                        <div class="gdlr-core-price-table-head">
-                                                            <h3 class="gdlr-core-price-table-title">Home Loan Calculator</h3>
-                                                        </div>
-                                                        <div class="gdlr-core-price-table-content-wrap">
-                                                            <div class="gdlr-core-price-table-content">
-                                                                <div class="gdlr-core-price-list-shortcode">
-                                                                    <ul class="calculator-col-first">
-                                                                        <li class="d-flex flex-column  justify-start  input-range">
-                                                                            <label>Loan Amount</label>
-                                                                            <div class="input-group prefix ">
-                                                                                <span class="input-group-addon">$</span>
-                                                                                <input type="text" class="form-control" id="LoanAmount" value="2500000" />
-                                                                            </div>
-                                                                            <div class="rangeslider-container">
-                                                                                <input class="range" type="range" name="" value="0" min="0" max="1000"/>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li class="d-flex flex-column justify-start input-range">
-                                                                            <label>Interest Rate</label>
-                                                                            <div class="input-group">
-                                                                                <input type="text" class="form-control" id="InterestRate" value="10" />
-                                                                            </div>
-                                                                            <div class="rangeslider-container">
-                                                                                <input class="range" type="range" name="" value="0" min="0" max="1000" />
-                                                                            </div>
-                                                                        </li>
-                                                                        <li class="d-flex flex-column  justify-start input-range">
-                                                                            <label>Loan Tenure</label>
-                                                                            <div class="input-group">
-                                                                                <input type="text" class="form-control" id="LoanTenure" value="15" />
-                                                                            </div>
-                                                                            <div class="rangeslider-container">
-                                                                                <input class="range" type="range" name="" value="0" min="0" max="1000" />
-                                                                            </div>
-                                                                        </li>
-                                                                </ul>
-                                                            </div>
-                                                            </div>
-                                                            @*<a class="gdlr-core-price-table-button gdlr-core-button" href="#" target="_self">Calculate</a>*@
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="gdlr-core-price-table-column gdlr-core-column-flex">
-                                                    <div class="gdlr-core-price-table">
-                                                        <div class="gdlr-core-price-table-head">
-                                                            <h3 class="gdlr-core-price-table-title">Your EMI Details</h3>
-                                                        </div>
-                                                        <div class="gdlr-core-price-table-content-wrap">
-                                                            <div class="gdlr-core-price-table-content">
-                                                                <div class="gdlr-core-price-list-shortcode">
-                                                                    <ul class="EMI-details">
-                                                                        <li>
-                                                                            <label class="item-lbl">Loan EMI</label>
-                                                                            <div class="item-value">$5247</div>
-                                                                         </li>
-                                                                        <li>
-                                                                            <label class="item-lbl">Total Interest Payable</label>
-                                                                            <div class="item-value">$52470</div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <label class="item-lbl">Total Payment</label>
-                                                                            <div class="item-value">$152470</div>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="gdlr-core-price-table-column gdlr-core-column-flex">
-                                                    <div class="gdlr-core-price-table">
-                                                        <div class="gdlr-core-price-table-head">
-                                                            <h3 class="gdlr-core-price-table-title">Principal vs Interest</h3>
-                                                        </div>
-                                                        <div class="gdlr-core-price-table-content-wrap">
-                                                            <div class="gdlr-core-price-table-content">
-                                                                <div class="gdlr-core-price-list-shortcode">
-                                                                    <img src="https://max-themes.net/demos/financity/demo2/upload/single-port-1-2.jpg" alt="" width="620" height="388">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <div class="gdlr-core-tab-item-content  gdlr-core-active">
+                                        @Html.Partial("~/Views/Home/_Calculator.cshtml")
+                                    </div>
+                                    @*<div class="gdlr-core-tab-item-content " data-tab-id="2">
+                                            @Html.Partial("~/Views/Home/_Calculator.cshtml", "Personal")
                                         </div>
-
-                                    </div>
-                                    <div class="gdlr-core-tab-item-content " data-tab-id="2">
-                                        Personal Loan Calculator
-                                    </div>
-                                    <div class="gdlr-core-tab-item-content " data-tab-id="3">
-                                        Car Loan Calculator
-                                    </div>
+                                        <div class="gdlr-core-tab-item-content " data-tab-id="3">
+                                            @Html.Partial("~/Views/Home/_Calculator.cshtml", "Car")
+                                        </div>*@
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+            <table id="emiTable">
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Principal</th>
+                        <th>Interest</th>
+                        <th>Total Payment</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be added here by JavaScript -->
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

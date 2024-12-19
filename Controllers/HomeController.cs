@@ -17,9 +17,10 @@ namespace SKMWebsite.Controllers
         {
             return View();
         }
-        public ActionResult Calculator()
+        public ActionResult Calculator(string loanType = null)
         {
-            return View();
+            loanType = string.IsNullOrEmpty(loanType) ? "home" : loanType;
+            return View("~/Views/Home/Calculator.cshtml", null, loanType);
         }
         public ActionResult Downloads()
         {
