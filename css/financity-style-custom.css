@@ -3092,3 +3092,23 @@ ul.EMI-details li {
 ul.EMI-details li:last-child{
     border:none;
 }
+#financity-page-wrapper .gdlr-core-price-table {
+    margin-top: 0;
+    margin-left: 0;
+}
+#financity-page-wrapper .gdlr-core-item-pdlr, #financity-page-wrapper .gdlr-core-container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 0;
+}
+#financity-page-wrapper table tr:nth-child(even), #financity-page-wrapper table tr:nth-child(odd) {
+    color: #2d2e2e;
+}
+.submit-button {
+    background-color: #ee0444;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    padding: 14px 28px;
+    font-size: 15px;
+}
