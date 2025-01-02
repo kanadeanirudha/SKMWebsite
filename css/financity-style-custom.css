@@ -3112,3 +3112,14 @@ ul.EMI-details li:last-child{
     padding: 14px 28px;
     font-size: 15px;
 }
+.list-unstyled {
+    list-style: none;
+    margin: 0 !important;
+}
+.owl-dots {
+    display: none;
+}
+.header-slider-wrapper .gdlr-core-item-mglr {
+    margin-left: 15px;
+    margin-right: 15px;
+}
