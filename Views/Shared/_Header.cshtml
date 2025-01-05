@@ -1,5 +1,12 @@
 ﻿@{
     Layout = null;
+    string isHomeActive = string.Equals(ViewBag.Active, "home", StringComparison.InvariantCultureIgnoreCase) ? "current-menu-item" : "";
+    string isAboutUsActive = string.Equals(ViewBag.Active, "AboutUs", StringComparison.InvariantCultureIgnoreCase) ? "current-menu-item" : "";
+    string isServicesActive = string.Equals(ViewBag.Active, "OurServices", StringComparison.InvariantCultureIgnoreCase) ? "current-menu-item" : "";
+    string isCalculatorActive = string.Equals(ViewBag.Active, "Calculator", StringComparison.InvariantCultureIgnoreCase) ? "current-menu-item" : "";
+    string isDownloadsActive = string.Equals(ViewBag.Active, "Downloads", StringComparison.InvariantCultureIgnoreCase) ? "current-menu-item" : "";
+    string isReviewsActive = string.Equals(ViewBag.Active, "Reviews", StringComparison.InvariantCultureIgnoreCase) ? "current-menu-item" : "";
+    string isContactUsActive = string.Equals(ViewBag.Active, "ContactUs", StringComparison.InvariantCultureIgnoreCase) ? "current-menu-item" : "";
 }
 <div class="financity-header-background-transparent">
     <div class="financity-top-bar">
@@ -8,9 +15,9 @@
             <div class="financity-top-bar-left financity-item-pdlr financity-column-36">
                 <div class="owl-slider gdlr-core-dropdown-tab-content header-slider-wrapper">
                     <ul id="header-carousel" class="owl-carousel list-unstyled">
-                        <li class="gdlr-core-item-mglr">
-                            <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/AIA.png" alt=""></div>
-                        </li>
+                        @*<li class="gdlr-core-item-mglr">
+                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/AIA.png" alt=""></div>
+                            </li>*@
                         <li class="gdlr-core-item-mglr">
                             <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/ANZ.png" alt=""></div>
                         </li>
@@ -72,25 +79,25 @@
                 <div class="financity-navigation financity-item-pdlr clearfix ">
                     <div class="financity-main-menu" id="financity-main-menu">
                         <ul id="menu-main-navigation-1" class="sf-menu">
-                            <li class="menu-item menu-item-home current-menu-item page_item page-item-2039 current_page_item financity-normal-menu">
+                            <li class="menu-item financity-normal-menu @isHomeActive">
                                 <a href="/home/index"><i class="fa fa-home"></i>Home</a>
                             </li>
-                            <li class="menu-item financity-normal-menu">
+                            <li class="menu-item financity-normal-menu @isAboutUsActive">
                                 <a href="/home/aboutus" class="sf-with-ul-pre">About Us</a>
                             </li>
-                            <li class="menu-item financity-normal-menu">
+                            <li class="menu-item financity-normal-menu @isServicesActive">
                                 <a href="/home/ourservices" class="sf-with-ul-pre">Our Services</a>
                             </li>
-                            <li class="menu-item financity-normal-menu">
+                            <li class="menu-item financity-normal-menu @isCalculatorActive">
                                 <a class="nav-link" href="/home/calculator">Calculator</a>
                             </li>
-                            <li class="menu-item financity-normal-menu">
+                            <li class="menu-item financity-normal-menu @isDownloadsActive">
                                 <a class="nav-link" href="/home/downloads">Downloads</a>
                             </li>
-                            <li class="menu-item financity-normal-menu">
+                            <li class="menu-item financity-normal-menu @isReviewsActive">
                                 <a class="nav-link" href="/home/reviews">Reviews</a>
                             </li>
-                            <li class="menu-item financity-normal-menu">
+                            <li class="menu-item financity-normal-menu @isContactUsActive">
                                 <a class="nav-link" href="/home/contactus">Contact Us</a>
                             </li>
                         </ul>
