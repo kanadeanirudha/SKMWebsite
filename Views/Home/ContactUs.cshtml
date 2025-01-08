@@ -134,27 +134,31 @@
                             <div class="gdlr-core-contact-form-7-item gdlr-core-item-pdlr gdlr-core-item-pdb ">
                                 <div role="form" class="wpcf7" id="wpcf7-f1319-p1964-o1" lang="en-US" dir="ltr">
                                     <div class="screen-reader-response"></div>
-                                    <form class="quform" action="quform/process.php" method="post" enctype="multipart/form-data" onclick="">
+                                    <form class="quform" action="/home/SendEmail" method="POST">
                                         <div class="quform-elements gdlr-core-input-wrap gdlr-core-large gdlr-core-full-width gdlr-core-with-column gdlr-core-no-border">
                                             <div class="gdlr-core-column-20">
                                                 <span class="quform-element">
                                                     <input id="name" type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name*">
+                                                    @Html.ValidationMessage("name", new { @class = "text-danger" })
                                                 </span>
                                             </div>
                                             <div class="gdlr-core-column-20">
                                                 <span class="quform-element">
                                                     <input id="email" type="text" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*">
+                                                    @Html.ValidationMessage("email", new { @class = "text-danger" })
                                                 </span>
                                             </div>
                                             <div class="gdlr-core-column-20">
                                                 <span class="quform-element">
                                                     <input id="phonenumber" type="text" name="phonenumber" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Phone Number*">
+                                                    @Html.ValidationMessage("phonenumber", new { @class = "text-danger" })
                                                 </span>
                                             </div>
                                             <div class="clear"></div>
                                             <div class="gdlr-core-column-60">
                                                 <span class="quform-element">
                                                     <textarea id="message" name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message*"></textarea>
+                                                    @Html.ValidationMessage("message", new { @class = "text-danger" })
                                                 </span>
                                             </div>
 
