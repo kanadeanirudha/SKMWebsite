@@ -146,6 +146,7 @@
     <Content Include="Images\BankLogo\BNZ.png" />
     <Content Include="Images\BankLogo\CB.png" />
     <Content Include="Images\BankLogo\HT.png" />
+    <Content Include="Images\BankLogo\kiwibank.png" />
     <Content Include="Images\BankLogo\partner1.jpg" />
     <Content Include="Images\BankLogo\partner2.jpg" />
     <Content Include="Images\BankLogo\partner3.jpg" />
