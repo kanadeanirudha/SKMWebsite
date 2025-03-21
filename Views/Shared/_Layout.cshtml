@@ -23,43 +23,10 @@
             <div class="financity-page-wrapper" id="financity-page-wrapper">
                 <div class="gdlr-core-page-builder-body">
                     @RenderBody()
-                    <div class="gdlr-core-pbf-wrapper " style="margin: 0px 0px 0px 0px;padding: 15px 0px 15px 0px;">
-                        <div class="gdlr-core-pbf-background-wrap" style="background-color: #f7f7f7;"></div>
-                        <div class="owl-slider">
-                            <ul id="carousel" class="owl-carousel list-unstyled">
-                                <li class="gdlr-core-item-mglr">
-                                    <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/partner1.jpg" alt="" width="148" height="44"></div>
-                                </li>
-                                <li class="gdlr-core-item-mglr">
-                                    <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/partner2.jpg" alt="" width="132" height="46"></div>
-                                </li>
-                                <li class="gdlr-core-item-mglr">
-                                    <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/partner3.jpg" alt="" width="141" height="45"></div>
-                                </li>
-                                <li class="gdlr-core-item-mglr">
-                                    <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/partner4.jpg" alt="" width="138" height="49"></div>
-                                </li>
-                                <li class="gdlr-core-item-mglr">
-                                    <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/partner5.jpg" alt="" width="151" height="43"></div>
-                                </li>
-                                <li class="gdlr-core-item-mglr">
-                                    <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/partner6.jpg" alt="" width="132" height="46"></div>
-                                </li>
-                                <li class="gdlr-core-item-mglr">
-                                    <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/partner7.jpg" alt="" width="141" height="45"></div>
-                                </li>
-                                <li class="gdlr-core-item-mglr">
-                                    <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/partner8.jpg" alt="" width="138" height="49"></div>
-                                </li>
-                                <li class="gdlr-core-item-mglr">
-                                    <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/partner9.jpg" alt="" width="151" height="43"></div>
-                                </li>
-                                @*<li class="gdlr-core-item-mglr">
-                                    <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="~/Images/partner10.jpg" alt="" width="151" height="43"></div>
-                                </li>*@
-                            </ul>
-                        </div>
-                    </div>
+                    @if (ViewBag.Title != "Home" || ViewBag.Title != "home")
+                    {
+                        @Html.Partial("~/Views/Home/_BankLogoSlider.cshtml")
+                    }
                 </div>
             </div>
             @Html.Partial("~/Views/Shared/_Footer.cshtml")
@@ -329,95 +296,6 @@
         } /*]]>*/
     </script>
     @*-------End Slider----------*@
-
-    @*-------Google Map----------*@
-
-    <script type='text/javascript' src='https://maps.google.com/maps/api/js?libraries=geometry%2Cplaces%2Cweather%2Cpanoramio%2Cdrawing&#038;language=en&#038;ver=4.9.5'></script>
-    <script type='text/javascript'>
-        var wpgmp_local = {
-            "all_location": "All",
-            "show_locations": "Show Locations",
-            "sort_by": "Sort by",
-            "wpgmp_not_working": "not working...",
-            "place_icon_url": "https:////demo.goodlayers.com//financity//wp-content//plugins//wp-google-map-plugin//assets//images//icons//"
-        };
-    </script>
-    <script type='text/javascript' src='~/plugins/google-map-plugin/assets/js/maps.js'></script>
-
-    <script type='text/javascript' src='~/plugins/google-map-plugin/assets/js/frontend.js'></script>
-    <script type='text/javascript' src='~/plugins/goodlayers-core/include/js/page-builder.js'></script>
-    <script>
-        jQuery(document).ready(function ($) {
-            var map1 = $("#map1").maps({
-                "map_options": {
-                    "center_lat": "-36.9047914",
-                    "center_lng": "174.6827758",
-                    "zoom": 14,
-                    "map_type_id": "ROADMAP",
-                    "draggable": true,
-                    "scroll_wheel": false,
-                    "display_45_imagery": "",
-                    "marker_default_icon": "../images//default_marker.png",
-                    "infowindow_setting": "",
-                    "infowindow_bounce_animation": "",
-                    "infowindow_drop_animation": false,
-                    "close_infowindow_on_map_click": false,
-                    "default_infowindow_open": false,
-                    "infowindow_open_event": "click",
-                    "full_screen_control": true,
-                    "search_control": true,
-                    "zoom_control": true,
-                    "map_type_control": true,
-                    "street_view_control": true,
-                    "full_screen_control_position": "TOP_RIGHT",
-                    "search_control_position": null,
-                    "zoom_control_position": "TOP_LEFT",
-                    "map_type_control_position": "TOP_RIGHT",
-                    "map_type_control_style": "HORIZONTAL_BAR",
-                    "street_view_control_position": "TOP_LEFT",
-                    "map_control": true,
-                    "map_control_settings": null,
-                    "width": "",
-                    "height": "400"
-                },
-                "places": [{
-                    "id": "1",
-                    "title": "Auckland",
-                    "address": "London, New Zealand",
-                    "source": "manual",
-                    "content": "Auckland",
-                    "location": {
-                        "icon": "../images//default_marker.png",
-                        "lat": "-36.9047914",
-                        "lng": "174.6827758",
-                        "city": "Auckland",
-                        "state": "Auckland",
-                        "country": "New Zealand",
-                        "onclick_action": "marker",
-                        "redirect_custom_link": "",
-                        "marker_image": null,
-                        "open_new_tab": "yes",
-                        "postal_code": "",
-                        "draggable": false,
-                        "infowindow_default_open": false,
-                        "animation": "BOUNCE",
-                        "infowindow_disable": true,
-                        "zoom": 5,
-                        "extra_fields": null
-                    },
-                    "categories": [],
-                    "custom_filters": null
-                }],
-                "street_view": null,
-                "map_property": {
-                    "map_id": "1"
-                }
-            }).data("wpgmp_maps");
-        });
-    </script>
-    <script type="text/javascript" src="~/quform/js/plugins.js"></script>
-    <script type="text/javascript" src="~/quform/js/scripts.js"></script>
-    @*-------Google Map----------*@
     @RenderSection("scripts", required: false)
 </body>
 </html>

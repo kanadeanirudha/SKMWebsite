@@ -139,12 +139,25 @@
     <Content Include="Global.asax" />
     <Content Include="Images\about-team-bg.jpg" />
     <Content Include="Images\about-title-bg-team-1.png" />
-    <Content Include="Images\ANZ.png" />
     <Content Include="Images\ApplicationForm.jpg" />
-    <Content Include="Images\ASB.png" />
-    <Content Include="Images\avanti.png" />
-    <Content Include="Images\BNZ.png" />
-    <Content Include="Images\CB.png" />
+    <Content Include="Images\BankLogo\ANZ.png" />
+    <Content Include="Images\BankLogo\ASB.png" />
+    <Content Include="Images\BankLogo\avanti.png" />
+    <Content Include="Images\BankLogo\BNZ.png" />
+    <Content Include="Images\BankLogo\CB.png" />
+    <Content Include="Images\BankLogo\HT.png" />
+    <Content Include="Images\BankLogo\partner1.jpg" />
+    <Content Include="Images\BankLogo\partner2.jpg" />
+    <Content Include="Images\BankLogo\partner3.jpg" />
+    <Content Include="Images\BankLogo\partner4.jpg" />
+    <Content Include="Images\BankLogo\partner5.jpg" />
+    <Content Include="Images\BankLogo\partner6.jpg" />
+    <Content Include="Images\BankLogo\partner7.jpg" />
+    <Content Include="Images\BankLogo\partner8.jpg" />
+    <Content Include="Images\BankLogo\partner9.jpg" />
+    <Content Include="Images\BankLogo\SBS.png" />
+    <Content Include="Images\BankLogo\TSB.png" />
+    <Content Include="Images\BankLogo\WP.png" />
     <Content Include="Images\close.png" />
     <Content Include="Images\Declaration_Form.jpg" />
     <Content Include="Images\default-loading.gif" />
@@ -152,6 +165,7 @@
     <Content Include="Images\DisclosureForm.jpg" />
     <Content Include="Images\DisclosureStatement.jpg" />
     <Content Include="Images\error.png" />
+    <Content Include="Images\FirstHomePurchases.jpg" />
     <Content Include="Images\hp2-icon-1.png" />
     <Content Include="Images\hp2-icon-2.png" />
     <Content Include="Images\hp2-icon-3.png" />
@@ -160,20 +174,10 @@
     <Content Include="Images\hp2-service-3.jpg" />
     <Content Include="Images\hp2-service-4.jpg" />
     <Content Include="Images\hp2-service-5.jpg" />
-    <Content Include="Images\HT.png" />
-    <Content Include="Images\partner1.jpg" />
-    <Content Include="Images\partner2.jpg" />
-    <Content Include="Images\partner3.jpg" />
-    <Content Include="Images\partner4.jpg" />
-    <Content Include="Images\partner5.jpg" />
-    <Content Include="Images\partner6.jpg" />
-    <Content Include="Images\partner7.jpg" />
-    <Content Include="Images\partner8.jpg" />
-    <Content Include="Images\partner9.jpg" />
     <Content Include="Images\personnel-1.jpg" />
     <Content Include="Images\personnel-2.jpg" />
     <Content Include="Images\personnel-3.jpg" />
-    <Content Include="Images\SBS.png" />
+    <Content Include="Images\Refinancing.jpg" />
     <Content Include="Images\SDM-about-us.jpg" />
     <Content Include="Images\SDM-service1-1.jpg" />
     <Content Include="Images\SDM-service2.jpg" />
@@ -183,8 +187,6 @@
     <Content Include="Images\SKM-8.jpg" />
     <Content Include="Images\slider-1-1-1.jpg" />
     <Content Include="Images\slider-2-1.jpg" />
-    <Content Include="Images\TSB.png" />
-    <Content Include="Images\WP.png" />
     <Content Include="js\isotopefilter.js" />
     <Content Include="js\jquery\jquery-migrate.min.js" />
     <Content Include="js\jquery\jquery.js" />
@@ -782,6 +784,7 @@
     <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\Shared\_MobileHeader.cshtml" />
     <Content Include="Views\Home\_Calculator.cshtml" />
+    <Content Include="Views\Home\_BankLogoSlider.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
