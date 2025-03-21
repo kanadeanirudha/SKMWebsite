@@ -1,4 +1,5 @@
-﻿@{
+﻿
+@{
     Layout = null;
 }
 <footer>
@@ -60,25 +61,30 @@
                                 <div class="gdlr-core-input-wrap gdlr-core-small gdlr-core-full-width gdlr-core-with-column gdlr-core-no-border">
                                     <div class="gdlr-core-column-60">
                                         <span class="wpcf7-form-control-wrap your-name">
-                                            <input id="name" type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name*">
+
+                                            <input id="name" type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name*"  oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g,'');">
+                                            <span class="text-danger" style="color: red; font-size: 0.9em; margin-top: 5px;"></span>
                                         </span>
                                     </div>
                                     <div class="clear"></div>
                                     <div class="gdlr-core-column-60">
                                         <span class="wpcf7-form-control-wrap your-email">
                                             <input type="email" name="email" id="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*">
+                                            <span class="text-danger" style="color: red; font-size: 0.9em; margin-top: 5px;"></span>
                                         </span>
                                     </div>
                                     <div class="clear"></div>
                                     <div class="gdlr-core-column-60">
                                         <span class="wpcf7-form-control-wrap your-email">
-                                            <input type="number" name="phonenumber" id="phonenumber" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Phone Number*">
+                                            <input type="number" name="phonenumber" id="phonenumber" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Phone Number*"oninput="this.value=this.value.replace(/[^0-9]/g,'');">
+                                            <span class="text-danger" style="color: red; font-size: 0.9em; margin-top: 5px;"></span>
                                         </span>
                                     </div>
                                     <div class="clear"></div>
                                     <div class="gdlr-core-column-60">
                                         <span class="wpcf7-form-control-wrap your-message">
                                             <textarea name="message" id="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message*"></textarea>
+                                            <span class="text-danger" style="color: red; font-size: 0.9em; margin-top: 5px;"></span>
                                         </span>
                                     </div>
                                     <div class="gdlr-core-column-60 gdlr-core-left-align">
@@ -106,3 +112,55 @@
         </div>
     </div>
 </footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Select input elements
+        const nameInput = document.getElementById("name");
+        const emailInput = document.getElementById("email");
+        const phoneInput = document.getElementById("phonenumber");
+        const messageInput = document.getElementById("message");
+        const submitButton = document.getElementById("submitButton");
+
+        // Attach validation functions
+        [nameInput, emailInput, phoneInput, messageInput].forEach(input => {
+            input.addEventListener("blur", () => validateInput(input));
+            input.addEventListener("input", () => validateInput(input));
+        });
+
+        // Validation Functions
+        function validateInput(input) {
+            const errorSpan = input.nextElementSibling;
+            let isValid = true;
+
+            switch(input.id) {
+                case "name":
+                    isValid = /^[a-zA-Z\s]+$/.test(input.value.trim());
+                    errorSpan.textContent = isValid ? "" : "Name can only contain letters and spaces (no numbers or symbols)";
+                    break;
+                case "email":
+                    const emailRegex = /^[^\s@{}]+@{}[^\s@{}]+\.[^\s@{}]+$/;
+                    isValid = emailRegex.test(input.value.trim());
+                    errorSpan.textContent = isValid ? "" : "Enter a valid email address";
+                    break;
+                case "phonenumber":
+                    const phoneRegex = /^\d{10}$/;
+                    isValid = phoneRegex.test(input.value.trim());
+                    errorSpan.textContent = isValid ? "" : "Phone number must be exactly 10 digits";
+                    break;
+                case "message":
+                    isValid = input.value.trim().length >= 10;
+                    errorSpan.textContent = isValid ? "" : "Message must be at least 10 characters long";
+                    break;
+            }
+
+            input.classList.toggle("error", !isValid);
+            validateForm();
+        }
+
+        // Validate the form to enable/disable submit button
+        function validateForm() {
+            const allValid = [nameInput, emailInput, phoneInput, messageInput].every(input => !input.classList.contains("error") && input.value.trim());
+            submitButton.disabled = !allValid;
+        }
+    });
+</script>

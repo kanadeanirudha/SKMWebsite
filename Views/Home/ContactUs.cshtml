@@ -130,6 +130,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="gdlr-core-pbf-element">
                             <div class="gdlr-core-contact-form-7-item gdlr-core-item-pdlr gdlr-core-item-pdb ">
                                 <div role="form" class="wpcf7" id="wpcf7-f1319-p1964-o1" lang="en-US" dir="ltr">
@@ -138,34 +139,50 @@
                                         <div class="quform-elements gdlr-core-input-wrap gdlr-core-large gdlr-core-full-width gdlr-core-with-column gdlr-core-no-border">
                                             <div class="gdlr-core-column-20">
                                                 <span class="quform-element">
-                                                    <input id="name" type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name*">
-                                                    @Html.ValidationMessage("name", new { @class = "text-danger" })
+                                                    <input id="name" type="text" name="name" value="" size="40"
+                                                           class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                           aria-required="true" aria-invalid="false" placeholder="Full Name*"
+                                                           oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g,'');"
+                                                           style="border: 1px solid #ccc; padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px;">
+                                                    <span class="text-danger" style="color: red; font-size: 0.9em; margin-top: 5px;"></span>
                                                 </span>
                                             </div>
                                             <div class="gdlr-core-column-20">
                                                 <span class="quform-element">
-                                                    <input id="email" type="text" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*">
-                                                    @Html.ValidationMessage("email", new { @class = "text-danger" })
+                                                    <input id="email" type="text" name="email" value="" size="40"
+                                                           class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required wpcf7-validates-as-email"
+                                                           aria-required="true" aria-invalid="false" placeholder="Email*"
+                                                           style="border: 1px solid #ccc; padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px;">
+                                                    <span class="text-danger" style="color: red; font-size: 0.9em; margin-top: 5px;"></span>
                                                 </span>
                                             </div>
                                             <div class="gdlr-core-column-20">
                                                 <span class="quform-element">
-                                                    <input id="phonenumber" type="text" name="phonenumber" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Phone Number*">
-                                                    @Html.ValidationMessage("phonenumber", new { @class = "text-danger" })
+                                                    <input id="phonenumber" type="text" name="phonenumber" value="" size="40"
+                                                           class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                           aria-required="true" aria-invalid="false" placeholder="Phone Number*"
+                                                           oninput="this.value=this.value.replace(/[^0-9]/g,'');"
+                                                           style="border: 1px solid #ccc; padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px;">
+                                                    <span class="text-danger" style="color: red; font-size: 0.9em; margin-top: 5px;"></span>
                                                 </span>
                                             </div>
                                             <div class="clear"></div>
                                             <div class="gdlr-core-column-60">
                                                 <span class="quform-element">
-                                                    <textarea id="message" name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message*"></textarea>
-                                                    @Html.ValidationMessage("message", new { @class = "text-danger" })
+                                                    <textarea id="message" name="message" cols="40" rows="10"
+                                                              class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
+                                                              aria-required="true" aria-invalid="false" placeholder="Message*"
+                                                              style="border: 1px solid #ccc; padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px;"></textarea>
+                                                    <span class="text-danger" style="color: red; font-size: 0.9em; margin-top: 5px;"></span>
                                                 </span>
                                             </div>
 
                                             <div class="gdlr-core-column-60 gdlr-core-center-align">
                                                 <div class="quform-submit">
                                                     <div class="quform-submit-inner">
-                                                        <button type="submit" class="submit-button"><span>Submit Now</span></button>
+                                                        <button type="submit" class="submit-button" id="submitButton" disabled>
+                                                            <span>Submit Now</span>
+                                                        </button>
                                                     </div>
                                                     <div class="quform-loading-wrap"><span class="quform-loading"></span></div>
                                                 </div>
@@ -228,3 +245,57 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Select input elements
+        const nameInput = document.getElementById("name");
+        const emailInput = document.getElementById("email");
+        const phoneInput = document.getElementById("phonenumber");
+        const messageInput = document.getElementById("message");
+        const submitButton = document.getElementById("submitButton");
+
+        // Attach validation functions
+        [nameInput, emailInput, phoneInput, messageInput].forEach(input => {
+            input.addEventListener("blur", () => validateInput(input));
+            input.addEventListener("input", () => validateInput(input));
+        });
+
+        // Validation Functions
+        function validateInput(input) {
+            const errorSpan = input.nextElementSibling;
+            let isValid = true;
+
+            switch(input.id) {
+                case "name":
+                    isValid = /^[a-zA-Z\s]+$/.test(input.value.trim());
+                    errorSpan.textContent = isValid ? "" : "Name can only contain letters and spaces (no numbers or symbols)";
+                    break;
+                case "email":
+                    const emailRegex = /^[^\s@{}]+@{}[^\s@{}]+\.[^\s@{}]+$/;
+                    isValid = emailRegex.test(input.value.trim());
+                    errorSpan.textContent = isValid ? "" : "Enter a valid email address";
+                    break;
+                case "phonenumber":
+                    const phoneRegex = /^\d{10}$/;
+                    isValid = phoneRegex.test(input.value.trim());
+                    errorSpan.textContent = isValid ? "" : "Phone number must be exactly 10 digits";
+                    break;
+                case "message":
+                    isValid = input.value.trim().length >= 10;
+                    errorSpan.textContent = isValid ? "" : "Message must be at least 10 characters long";
+                    break;
+            }
+
+            input.classList.toggle("error", !isValid);
+            validateForm();
+        }
+
+        // Validate the form to enable/disable submit button
+        function validateForm() {
+            const allValid = [nameInput, emailInput, phoneInput, messageInput].every(input => !input.classList.contains("error") && input.value.trim());
+            submitButton.disabled = !allValid;
+        }
+    });
+</script>
