@@ -140,6 +140,7 @@
     <Content Include="Images\about-team-bg.jpg" />
     <Content Include="Images\about-title-bg-team-1.png" />
     <Content Include="Images\ApplicationForm.jpg" />
+    <Content Include="Images\AuthorityAndDeclarationForm.jpg" />
     <Content Include="Images\BankLogo\ANZ.png" />
     <Content Include="Images\BankLogo\ASB.png" />
     <Content Include="Images\BankLogo\avanti.png" />
@@ -255,6 +256,9 @@
     <Content Include="Attachments\Privacy-Policy.pdf" />
     <Content Include="Attachments\skm-disclosure-24.pdf" />
     <Content Include="Attachments\SKML_General_Application_Form.pdf" />
+    <Content Include="Attachments\AuthorityAndDeclarationLendingNZFSG.pdf" />
+    <Content Include="Attachments\Declaration_Form.pdf" />
+    <Content Include="Attachments\Disclosure_Statement.pdf" />
     <None Include="packages\jQuery.3.7.0\Content\Scripts\jquery-3.7.0-vsdoc.js" />
     <Content Include="packages\jQuery.3.7.0\Content\Scripts\jquery-3.7.0.js" />
     <Content Include="packages\jQuery.3.7.0\Content\Scripts\jquery-3.7.0.min.js" />
@@ -786,6 +790,7 @@
     <Content Include="Views\Shared\_MobileHeader.cshtml" />
     <Content Include="Views\Home\_Calculator.cshtml" />
     <Content Include="Views\Home\_BankLogoSlider.cshtml" />
+    <Content Include="Views\Home\FAQ.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

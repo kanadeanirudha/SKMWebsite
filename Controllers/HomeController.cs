@@ -46,6 +46,13 @@ namespace SKMWebsite.Controllers
             ViewBag.Active = "ContactUs";
             return View();
         }
+
+        public ActionResult FAQ()
+        {
+            ViewBag.Active = "FAQ";
+            return View();
+        }
+
         [HttpPost]
         public ActionResult SendEmail(ContactUsViewModel model)
         {

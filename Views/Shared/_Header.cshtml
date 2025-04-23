@@ -7,6 +7,7 @@
     string isDownloadsActive = string.Equals(ViewBag.Active, "Downloads", StringComparison.InvariantCultureIgnoreCase) ? "current-menu-item" : "";
     string isReviewsActive = string.Equals(ViewBag.Active, "Reviews", StringComparison.InvariantCultureIgnoreCase) ? "current-menu-item" : "";
     string isContactUsActive = string.Equals(ViewBag.Active, "ContactUs", StringComparison.InvariantCultureIgnoreCase) ? "current-menu-item" : "";
+    string isFAQActive = string.Equals(ViewBag.Active, "FAQ", StringComparison.InvariantCultureIgnoreCase) ? "current-menu-item" : "";
 }
 <div class="financity-header-background-transparent">
     <div class="financity-top-bar">
@@ -102,6 +103,9 @@
                             </li>
                             <li class="menu-item financity-normal-menu @isContactUsActive">
                                 <a class="nav-link" href="/home/contactus">Contact Us</a>
+                            </li>
+                            <li class="menu-item financity-normal-menu @isFAQActive">
+                                <a class="nav-link" href="/home/faq">FAQ</a>
                             </li>
                         </ul>
                         <div class="financity-navigation-slide-bar" id="financity-navigation-slide-bar"></div>
