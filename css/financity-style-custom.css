@@ -2932,20 +2932,24 @@ body .gdlr-core-breadcrumbs-item {
 .d-flex {
     display: flex;
 }
+
 .flex-column {
     flex-direction: column;
 }
-.alignCenter{
-    align-items:center;
+
+.alignCenter {
+    align-items: center;
 }
-.justify-start{
-    justify-content:flex-start;
+
+.justify-start {
+    justify-content: flex-start;
 }
 
 
 .calculator-wrapper .gdlr-core-price-table-item .gdlr-core-price-table {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
+
 .calculator-col-first label {
     text-align: left;
     margin-bottom: 5px;
@@ -2970,7 +2974,7 @@ body .gdlr-core-breadcrumbs-item {
     height: 30px;
 }
 
-.calculator-wrapper input {
+.calculator-wrapper input, .calculator-wrapper select {
     position: relative;
     z-index: 2;
     float: left;
@@ -2995,19 +2999,23 @@ body .gdlr-core-breadcrumbs-item {
     border-radius: 4px 0px 0px 4px;
     border-right: 0;
 }
+
 .calculator-wrapper .input-group.prefix, .calculator-wrapper .input-group {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
 }
+
 .calculator-wrapper .gdlr-core-price-table .gdlr-core-price-table-content {
     padding: 10px 20px;
     background: #ffffff;
 }
+
 .calculator-wrapper .calculator-col-first li {
     border: none;
 }
+
 .calculator-wrapper .gdlr-core-column-flex {
     flex: 0 0 33%;
     height: 1;
@@ -3016,10 +3024,12 @@ body .gdlr-core-breadcrumbs-item {
     .calculator-wrapper .gdlr-core-column-flex .gdlr-core-price-table {
         height: 100%;
     }
+
 .calculator-wrapper .gdlr-core-price-table-item .gdlr-core-price-table {
     background: #ffffff;
 }
-.calculator-col-first input {
+
+.calculator-col-first input, .calculator-col-first select {
     background: #ffffff;
     border: 1px solid #ced4da;
 }
@@ -3029,9 +3039,11 @@ input.range {
     padding: 6px 0 !important;
     background: rgba(107, 82, 158, 0.2) !important;
 }
+
 .input-range {
     position: relative;
 }
+
 .rangeslider-container {
     position: absolute;
     bottom: -15px;
@@ -3068,10 +3080,12 @@ input.range {
         border: 2px solid #141414;
         box-shadow: -407px 0 0 400px #ee0444;
     }
+
 ul.calculator-col-first li {
     padding: 8px 20px !important;
     margin-bottom: 30px !important;
 }
+
 label.item-lbl, .input-range label {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
@@ -3083,27 +3097,33 @@ label.item-lbl, .input-range label {
 ul.EMI-details li {
     text-align: left;
 }
+
 .item-value {
     font-size: 30px;
     color: #ee0444;
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
 }
-ul.EMI-details li:last-child{
-    border:none;
+
+ul.EMI-details li:last-child {
+    border: none;
 }
+
 #financity-page-wrapper .gdlr-core-price-table {
     margin-top: 0;
     margin-left: 0;
 }
+
 #financity-page-wrapper .gdlr-core-item-pdlr, #financity-page-wrapper .gdlr-core-container {
     padding-left: 0 !important;
     padding-right: 0 !important;
     padding-bottom: 0;
 }
+
 #financity-page-wrapper table tr:nth-child(even), #financity-page-wrapper table tr:nth-child(odd) {
     color: #2d2e2e;
 }
+
 .submit-button {
     background-color: #ee0444;
     font-weight: bold;
@@ -3112,26 +3132,37 @@ ul.EMI-details li:last-child{
     padding: 14px 28px;
     font-size: 15px;
 }
+
 .list-unstyled {
     list-style: none;
     margin: 0 !important;
 }
+
 .owl-dots {
     display: none;
 }
+
 .header-slider-wrapper .gdlr-core-item-mglr {
     margin-left: 15px;
     margin-right: 15px;
 }
+
 .homepage-slider-wrapper .tp-caption.rev-btn a {
     color: #ffffff !important;
 }
+
 .homepage-slider-wrapper .tp-caption.rev-btn {
     background: #ee0444 !important;
 }
-    .homepage-slider-wrapper .tp-caption.rev-btn:hover {
-        background: #ffffff !important;
-    }
-        .homepage-slider-wrapper .tp-caption.rev-btn:hover a {
-            color: #ee0444 !important;
-        }
+
+.homepage-slider-wrapper .tp-caption.rev-btn:hover {
+    background: #ffffff !important;
+}
+
+.homepage-slider-wrapper .tp-caption.rev-btn:hover a {
+    color: #ee0444 !important;
+}
+
+.gdlr-core-price-list-shortcode ul.calculator-col-first li:first-child {
+    margin-bottom: 0 !important;
+}

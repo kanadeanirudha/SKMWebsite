@@ -141,6 +141,7 @@
     <Content Include="Images\about-title-bg-team-1.png" />
     <Content Include="Images\ApplicationForm.jpg" />
     <Content Include="Images\AuthorityAndDeclarationForm.jpg" />
+    <Content Include="Images\AwardLogo\award-image.png" />
     <Content Include="Images\BankLogo\ANZ.png" />
     <Content Include="Images\BankLogo\ASB.png" />
     <Content Include="Images\BankLogo\avanti.png" />
@@ -791,6 +792,7 @@
     <Content Include="Views\Home\_Calculator.cshtml" />
     <Content Include="Views\Home\_BankLogoSlider.cshtml" />
     <Content Include="Views\Home\FAQ.cshtml" />
+    <Content Include="Views\Home\_AwardLogoSlider.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
