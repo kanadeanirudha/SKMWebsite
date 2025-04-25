@@ -4,6 +4,20 @@
 }
 <footer>
     <div class="financity-footer-wrapper ">
+        <!-- Floating Notification Span -->
+        @if (TempData["success"] != null)
+        {
+            <div id="toast" class="floating-toast success">
+                @TempData["success"]
+            </div>
+        }
+        @if (TempData["error"] != null)
+        {
+            <div id="toast" class="floating-toast error">
+                @TempData["error"]
+            </div>
+        }
+
         <div class="financity-footer-container financity-container clearfix">
             <div class="financity-footer-column financity-item-pdlr financity-column-15">
                 <div id="text-2" class="widget widget_text financity-widget">
