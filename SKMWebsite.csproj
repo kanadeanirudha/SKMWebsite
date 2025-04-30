@@ -141,7 +141,9 @@
     <Content Include="Images\about-title-bg-team-1.png" />
     <Content Include="Images\ApplicationForm.jpg" />
     <Content Include="Images\AuthorityAndDeclarationForm.jpg" />
-    <Content Include="Images\AwardLogo\award-image.png" />
+    <Content Include="Images\AwardLogo\award-image1.png" />
+    <Content Include="Images\AwardLogo\award-image2.png" />
+    <Content Include="Images\AwardLogo\award-image3.png" />
     <Content Include="Images\BankLogo\ANZ.png" />
     <Content Include="Images\BankLogo\ASB.png" />
     <Content Include="Images\BankLogo\avanti.png" />
@@ -149,6 +151,7 @@
     <Content Include="Images\BankLogo\CB.png" />
     <Content Include="Images\BankLogo\HT.png" />
     <Content Include="Images\BankLogo\kiwibank.png" />
+    <Content Include="Images\BankLogo\Liberty.png" />
     <Content Include="Images\BankLogo\partner1.jpg" />
     <Content Include="Images\BankLogo\partner2.jpg" />
     <Content Include="Images\BankLogo\partner3.jpg" />
@@ -187,7 +190,7 @@
     <Content Include="Images\SDM-service3.jpg" />
     <Content Include="Images\shutterstock_417862237.jpg" />
     <Content Include="Images\sk-logo-2.png" />
-    <Content Include="Images\SKM-8.jpg" />
+    <Content Include="Images\SKM-8.png" />
     <Content Include="Images\slider-1-1-1.jpg" />
     <Content Include="Images\slider-2-1.jpg" />
     <Content Include="js\isotopefilter.js" />
