@@ -3166,3 +3166,10 @@ ul.EMI-details li:last-child {
 .gdlr-core-price-list-shortcode ul.calculator-col-first li:first-child {
     margin-bottom: 0 !important;
 }
+#header-carousel .gdlr-core-gallery-list.gdlr-core-media-image {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
