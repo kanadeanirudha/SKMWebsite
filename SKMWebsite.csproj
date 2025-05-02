@@ -152,6 +152,7 @@
     <Content Include="Images\BankLogo\HT.png" />
     <Content Include="Images\BankLogo\kiwibank.png" />
     <Content Include="Images\BankLogo\Liberty.png" />
+    <Content Include="Images\BankLogo\PaperMoney.jpg" />
     <Content Include="Images\BankLogo\partner1.jpg" />
     <Content Include="Images\BankLogo\partner2.jpg" />
     <Content Include="Images\BankLogo\partner3.jpg" />
@@ -163,6 +164,7 @@
     <Content Include="Images\BankLogo\partner9.jpg" />
     <Content Include="Images\BankLogo\SBS.png" />
     <Content Include="Images\BankLogo\TSB.png" />
+    <Content Include="Images\BankLogo\UnityLogo.png" />
     <Content Include="Images\BankLogo\WP.png" />
     <Content Include="Images\close.png" />
     <Content Include="Images\Declaration_Form.jpg" />
