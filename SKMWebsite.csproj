@@ -153,6 +153,7 @@
     <Content Include="Images\BankLogo\kiwibank.png" />
     <Content Include="Images\BankLogo\Liberty.png" />
     <Content Include="Images\BankLogo\PaperMoney.jpg" />
+    <Content Include="Images\BankLogo\PaperMoney.png" />
     <Content Include="Images\BankLogo\partner1.jpg" />
     <Content Include="Images\BankLogo\partner2.jpg" />
     <Content Include="Images\BankLogo\partner3.jpg" />
@@ -185,6 +186,7 @@
     <Content Include="Images\personnel-1.jpg" />
     <Content Include="Images\personnel-2.jpg" />
     <Content Include="Images\personnel-3.jpg" />
+    <Content Include="Images\personnel-4.jpg" />
     <Content Include="Images\Refinancing.jpg" />
     <Content Include="Images\SDM-about-us.jpg" />
     <Content Include="Images\SDM-service1-1.jpg" />
