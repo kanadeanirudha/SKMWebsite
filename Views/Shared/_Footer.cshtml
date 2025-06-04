@@ -78,7 +78,7 @@
                     <div class="textwidget">
                         <div role="form" class="wpcf7" id="wpcf7-f5505-o2" lang="en-US" dir="ltr">
                             <div class="screen-reader-response"></div>
-                            <form action="/home/SendEmail" method="post" class="wpcf7-form" novalidate="novalidate">
+                            <form id="contact" action="/home/SendEmail" method="post" class="wpcf7-form" onsubmit="return validateCaptcha(event)">
                                 <div class="gdlr-core-input-wrap gdlr-core-small gdlr-core-full-width gdlr-core-with-column gdlr-core-no-border">
                                     <div class="gdlr-core-column-60">
                                         <span class="wpcf7-form-control-wrap your-name">
@@ -108,6 +108,11 @@
                                             <span class="text-danger" style="color: red; font-size: 0.9em; margin-top: 5px;"></span>
                                         </span>
                                     </div>
+                                    <div id="footercaptchaContainer" style="margin-bottom: 10px;"></div>
+                                    <input type="text"
+                                           id="cpatchaTextBox"
+                                           placeholder="Enter Captcha"
+                                           style="width: 100%; padding: 12px 20px; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; margin-bottom: 10px;" />
                                     <div class="gdlr-core-column-60 gdlr-core-left-align">
                                         <input type="submit" value="Submit Now" class="wpcf7-form-control wpcf7-submit gdlr-core-small">
                                     </div>
@@ -135,13 +140,93 @@
 </footer>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
+
         // Select input elements
         const nameInput = document.getElementById("name");
         const emailInput = document.getElementById("email");
         const phoneInput = document.getElementById("phonenumber");
         const messageInput = document.getElementById("message");
         const submitButton = document.getElementById("submitButton");
+       let code; // Declare at the top so it's accessible to all functions
 
+  function createCaptcha() {
+    // now you can assign to code safely
+    document.getElementById('footercaptchaContainer').innerHTML = "";
+
+    const charsArray = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\s@{}" + "!#$%^&*";
+    const captchaLength = 6;
+    let captcha = [];
+
+    while (captcha.length < captchaLength) {
+      const char = charsArray.charAt(Math.floor(Math.random() * charsArray.length));
+      if (!captcha.includes(char)) captcha.push(char);
+    }
+
+    const canvas = document.createElement("canvas");
+    canvas.width = 100;
+    canvas.height = 50;
+    canvas.style.pointerEvents = "none";
+
+    const ctx = canvas.getContext("2d");
+
+    // Draw background (optional)
+    ctx.fillStyle = "#000"; // black background
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Draw captcha text
+    ctx.font = "25px Georgia";
+    ctx.fillStyle = "white";
+    const captchaText = captcha.join("");
+    ctx.fillText(captchaText, 0, 30);
+
+    // Draw random strike-through lines with random angles and positions
+    ctx.strokeStyle = "red"; // color of strike-through lines
+    ctx.lineWidth = 1.5;
+
+    const numberOfLines = 5; // number of random strike-through lines
+
+    for (let i = 0; i < numberOfLines; i++) {
+      // Random start point anywhere on the canvas
+      const startX = Math.random() * canvas.width;
+      const startY = Math.random() * canvas.height;
+
+      // Random angle in radians between -45° and 45° (approx)
+      const angle = (Math.random() * 90 - 45) * (Math.PI / 180);
+
+      // Random length between 50 and 100 pixels
+      const length = 50 + Math.random() * 50;
+
+      // Calculate end point based on angle and length
+      const endX = startX + length * Math.cos(angle);
+      const endY = startY + length * Math.sin(angle);
+
+      // Draw the line
+      ctx.beginPath();
+      ctx.moveTo(startX, startY);
+      ctx.lineTo(endX, endY);
+      ctx.stroke();
+    }
+        code = captcha.join("");
+        document.getElementById("footercaptchaContainer").appendChild(canvas);
+    }
+
+  function validateCaptcha(event) {
+     event.preventDefault();
+
+    const userInput = document.getElementById('cpatchaTextBox').value;
+    if (userInput === code) {
+      event.target.submit();
+    } else {
+      alert("Invalid Captcha. Try Again.");
+      createCaptcha();
+      document.getElementById('cpatchaTextBox').value = "";
+    }
+  }
+
+  createCaptcha();
+
+
+  document.getElementById("contact").addEventListener("submit", validateCaptcha);
         // Attach validation functions
         [nameInput, emailInput, phoneInput, messageInput].forEach(input => {
             input.addEventListener("blur", () => validateInput(input));

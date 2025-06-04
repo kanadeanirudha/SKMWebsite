@@ -135,7 +135,7 @@
                             <div class="gdlr-core-contact-form-7-item gdlr-core-item-pdlr gdlr-core-item-pdb ">
                                 <div role="form" class="wpcf7" id="wpcf7-f1319-p1964-o1" lang="en-US" dir="ltr">
                                     <div class="screen-reader-response"></div>
-                                    <form class="quform" action="/home/SendEmail" method="POST">
+                                    <form id="contactus" class="quform" action="/home/SendEmail" method="POST">
                                         <div class="quform-elements gdlr-core-input-wrap gdlr-core-large gdlr-core-full-width gdlr-core-with-column gdlr-core-no-border">
                                             <div class="gdlr-core-column-20">
                                                 <span class="quform-element">
@@ -176,7 +176,13 @@
                                                     <span class="text-danger" style="color: red; font-size: 0.9em; margin-top: 5px;"></span>
                                                 </span>
                                             </div>
-
+                                            <div class="gdlr-core-column-60 gdlr-core-center-align">
+                                                <div id="captchaContainer" style="margin-bottom: 10px;">THis</div>
+                                                <input type="text"
+                                                       id="cpatchaTextBox"
+                                                       placeholder="Enter Captcha"
+                                                       style="width: 33%; padding: 12px 20px; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; margin-bottom: 10px;" />
+                                            </div>
                                             <div class="gdlr-core-column-60 gdlr-core-center-align">
                                                 <div class="quform-submit">
                                                     <div class="quform-submit-inner">
@@ -297,5 +303,92 @@
             const allValid = [nameInput, emailInput, phoneInput, messageInput].every(input => !input.classList.contains("error") && input.value.trim());
             submitButton.disabled = !allValid;
         }
+
+  function createCaptcha() {
+    // now you can assign to code safely
+    document.getElementById('captchaContainer').innerHTML = "";
+
+    const charsArray = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\s@{}" + "!#$%^&*";
+    const captchaLength = 6;
+    let captcha = [];
+
+    while (captcha.length < captchaLength) {
+      const char = charsArray.charAt(Math.floor(Math.random() * charsArray.length));
+      if (!captcha.includes(char)) captcha.push(char);
+    }
+
+    const canvas = document.createElement("canvas");
+    canvas.width = 100;
+    canvas.height = 50;
+    canvas.style.pointerEvents = "none";
+
+    const ctx = canvas.getContext("2d");
+
+    // Draw background (optional)
+    ctx.fillStyle = "#000"; // black background
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Draw captcha text
+    ctx.font = "25px Georgia";
+    ctx.fillStyle = "white";
+    const captchaText = captcha.join("");
+    ctx.fillText(captchaText, 0, 30);
+
+    // Draw random strike-through lines with random angles and positions
+    ctx.strokeStyle = "red"; // color of strike-through lines
+    ctx.lineWidth = 1.5;
+
+    const numberOfLines = 5; // number of random strike-through lines
+
+    for (let i = 0; i < numberOfLines; i++) {
+      // Random start point anywhere on the canvas
+      const startX = Math.random() * canvas.width;
+      const startY = Math.random() * canvas.height;
+
+      // Random angle in radians between -45° and 45° (approx)
+      const angle = (Math.random() * 90 - 45) * (Math.PI / 180);
+
+      // Random length between 50 and 100 pixels
+      const length = 50 + Math.random() * 50;
+
+      // Calculate end point based on angle and length
+      const endX = startX + length * Math.cos(angle);
+      const endY = startY + length * Math.sin(angle);
+
+      // Draw the line
+      ctx.beginPath();
+      ctx.moveTo(startX, startY);
+      ctx.lineTo(endX, endY);
+      ctx.stroke();
+    }
+        code = captcha.join("");
+        document.getElementById("captchaContainer").appendChild(canvas);
+    }
+
+  function validateCaptcha(event) {
+     event.preventDefault();
+
+    const userInput = document.getElementById('cpatchaTextBox').value;
+      if (userInput === code) {
+          validateForm();
+          document.getElementById("submitButton").disabled = false;
+      event.target.submit();
+      } else {
+          validateForm();
+      alert("Invalid Captcha. Try Again.");
+      createCaptcha();
+      document.getElementById('cpatchaTextBox').value = "";
+    }
+  }
+
+  createCaptcha();
+
+
+        document.getElementById("contactus").addEventListener("submit", validateCaptcha);
+        // Attach validation functions
+        [nameInput, emailInput, phoneInput, messageInput].forEach(input => {
+            input.addEventListener("blur", () => validateInput(input));
+            input.addEventListener("input", () => validateInput(input));
+        });
     });
 </script>
