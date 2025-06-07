@@ -54,6 +54,7 @@ namespace SKMWebsite.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult SendEmail(ContactUsViewModel model)
         {
             try
