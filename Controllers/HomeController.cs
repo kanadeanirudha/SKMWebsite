@@ -58,6 +58,13 @@ namespace SKMWebsite.Controllers
         {
             try
             {
+                if (!string.IsNullOrEmpty(Request.Form["website"]))
+                {
+                    // Probably spam
+                    return RedirectToAction(nameof(ContactUs));
+                }
+
+
                 if (ModelState.IsValid)
                 {
                     var senderEmail = new MailAddress(
