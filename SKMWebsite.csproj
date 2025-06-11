@@ -144,6 +144,7 @@
     <Content Include="Images\AwardLogo\award-image1.png" />
     <Content Include="Images\AwardLogo\award-image2.png" />
     <Content Include="Images\AwardLogo\award-image3.png" />
+    <Content Include="Images\AwardLogo\award-image4.png" />
     <Content Include="Images\BankLogo\ANZ.png" />
     <Content Include="Images\BankLogo\ASB.png" />
     <Content Include="Images\BankLogo\avanti.png" />
