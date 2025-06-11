@@ -136,6 +136,7 @@
                                 <div role="form" class="wpcf7" id="wpcf7-f1319-p1964-o1" lang="en-US" dir="ltr">
                                     <div class="screen-reader-response"></div>
                                     <form id="contactus" class="quform" action="/home/SendEmail" method="POST">
+                                        @Html.AntiForgeryToken()
                                         <input type="text" name="website" style="display:none;">
                                         <div class="quform-elements gdlr-core-input-wrap gdlr-core-large gdlr-core-full-width gdlr-core-with-column gdlr-core-no-border">
                                             <div class="gdlr-core-column-20">
