@@ -3173,10 +3173,10 @@ ul.EMI-details li:last-child {
     align-items: center;
     justify-content: center;
 }
-.financity-top-bar-container.financity-container {
+/*.financity-top-bar-container.financity-container {
     display: flex;
     align-items: center;
-}
+}*/
 @media only screen and (max-width:1024px) {
 
     .gdlr-core-price-table-item.gdlr-core-item-pdlr {
