@@ -608,7 +608,7 @@ body.financity-boxed .financity-fixed-footer .financity-copyright-wrapper{ margi
 .financity-footer-back-to-top-button.financity-scrolled{ opacity: 1; pointer-events: auto; }
 
 /* copyright */
-.financity-footer-wrapper{ padding-top: 70px; padding-bottom: 50px; }
+.financity-footer-wrapper{ padding-top: 70px;/* padding-bottom: 50px;*/ }
 .financity-copyright-container{ text-transform: uppercase; letter-spacing: 2px; }
 .financity-copyright-text{ text-align: center; font-size: 14px; }
 .financity-copyright-left{ float: left; }
